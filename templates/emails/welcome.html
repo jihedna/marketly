@@ -1,0 +1,13 @@
+{% extends 'emails/_layout.html' %}
+{% load i18n %}
+{% block subject %}{% trans "Welcome to Marketly!" %}{% endblock %}
+{% block body %}
+<h2 style="margin:0 0 10px;">{% trans "Welcome to Marketly!" %}</h2>
+<p style="color:#5a5772;">{% blocktrans with name=user.display_name %}Hi {{ name }}, welcome aboard. Here's how to get the most out of Marketly:{% endblocktrans %}</p>
+<ul style="color:#5a5772;">
+  <li>{% trans "Browse solutions and start your first personalized plan." %}</li>
+  <li>{% trans "Use the AI chatbot for ideas, briefs and copy." %}</li>
+  <li>{% trans "Upgrade to unlock premium features and longer plans." %}</li>
+</ul>
+<p><a href="{{ site_url }}" style="display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,#ff7a2d,#ff3d8b,#7a3cff);color:#fff;text-decoration:none;font-weight:700;">{% trans "Open Marketly" %}</a></p>
+{% endblock %}

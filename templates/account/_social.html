@@ -1,0 +1,15 @@
+{% load socialaccount i18n %}
+<div class="divider">{% trans "or continue with" %}</div>
+<div class="social-row">
+  {% get_providers as socialaccount_providers %}
+  {% for p in socialaccount_providers %}
+    <a class="social-btn" href="{% provider_login_url p.id %}">
+      {% if p.id == 'google' %}G{% elif p.id == 'facebook' %}f{% elif p.id == 'github' %}●{% else %}◎{% endif %}
+      <span>{{ p.name }}</span>
+    </a>
+  {% empty %}
+    <a class="social-btn" aria-disabled="true" title="{% trans 'Configure in admin → Social applications' %}">Google</a>
+    <a class="social-btn" aria-disabled="true" title="{% trans 'Configure in admin → Social applications' %}">Facebook</a>
+    <a class="social-btn" aria-disabled="true" title="{% trans 'Configure in admin → Social applications' %}">GitHub</a>
+  {% endfor %}
+</div>

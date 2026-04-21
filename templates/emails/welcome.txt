@@ -1,0 +1,3 @@
+{% load i18n %}{% blocktrans with name=user.display_name %}Hi {{ name }}, welcome to Marketly!{% endblocktrans %}
+
+{% trans "Visit" %}: {{ site_url }}

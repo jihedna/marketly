@@ -1,0 +1,125 @@
+{% load i18n static %}
+<!doctype html>
+<html lang="{{ LANGUAGE_CODE|default:'en' }}" dir="{% if LANGUAGE_CODE == 'ar' %}rtl{% else %}ltr{% endif %}" data-theme="{{ PREFERRED_THEME|default:'light' }}">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{% block title %}{{ BRAND_NAME }} — {% trans "Marketing strategies that grow brands" %}{% endblock %}</title>
+<meta name="description" content="{% block description %}{% trans 'Plan, launch and scale premium marketing strategies with Marketly.' %}{% endblock %}" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cairo:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/styles.css' %}?v=3" />
+{% block extra_head %}{% endblock %}
+</head>
+<body class="page-{% block body_class %}home{% endblock %}">
+<a class="skip-link" href="#main">{% trans "Skip to content" %}</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="{% url 'core:home' %}" class="brand" aria-label="{{ BRAND_NAME }}">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">{{ BRAND_NAME }}</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="{% trans 'Open menu' %}" aria-expanded="false" data-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="{% trans 'Main navigation' %}" data-main-nav>
+      <a href="{% url 'solutions:list' %}">{% trans "Solutions" %}</a>
+      <a href="{% url 'billing:pricing' %}">{% trans "Pricing" %}</a>
+      <a href="{% url 'chatbot:home' %}">{% trans "AI chatbot" %}</a>
+      <a href="{% url 'recommendations:home' %}">{% trans "Recommendations" %}</a>
+      <a href="{% url 'core:contact' %}">{% trans "Contact" %}</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switcher" data-lang-switcher>
+        <button class="lang-btn" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-globe" aria-hidden="true">🌐</span>
+          <span class="lang-code">{{ LANGUAGE_CODE|upper }}</span>
+        </button>
+        <ul class="lang-menu" role="menu">
+          {% get_available_languages as LANGS %}
+          {% get_language_info_list for LANGS as langs %}
+          {% for lang in langs %}
+            <li role="none">
+              <button role="menuitem" data-lang="{{ lang.code }}">{{ lang.name_local }} <span class="muted">({{ lang.code|upper }})</span></button>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <button class="theme-toggle" data-theme-toggle aria-label="{% trans 'Toggle dark mode' %}">
+        <span class="t-sun" aria-hidden="true">☀</span>
+        <span class="t-moon" aria-hidden="true">☾</span>
+      </button>
+
+      {% if request.user.is_authenticated %}
+        <a class="btn-ghost" href="{% url 'dashboard:home' %}">{% trans "Dashboard" %}</a>
+        <form action="{% url 'accounts:logout' %}" method="post" class="inline-form">{% csrf_token %}
+          <button class="btn-outline" type="submit">{% trans "Sign out" %}</button>
+        </form>
+      {% else %}
+        <a class="btn-ghost" href="{% url 'accounts:login' %}">{% trans "Sign in" %}</a>
+        <a class="btn-primary" href="{% url 'accounts:signup' %}">{% trans "Get started" %}</a>
+      {% endif %}
+    </div>
+  </div>
+</header>
+
+{% if messages %}
+<div class="flash-stack" role="status" aria-live="polite">
+  {% for m in messages %}
+    <div class="flash flash-{{ m.tags|default:'info' }}">{{ m }}</div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<main id="main">
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="{% url 'core:home' %}" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">{{ BRAND_NAME }}</span>
+      </a>
+      <p class="footer-lede">{% trans "Marketing strategies that grow brands across every channel." %}</p>
+    </div>
+    <div>
+      <h4>{% trans "Product" %}</h4>
+      <a href="{% url 'solutions:list' %}">{% trans "Solutions" %}</a>
+      <a href="{% url 'billing:pricing' %}">{% trans "Pricing" %}</a>
+      <a href="{% url 'chatbot:home' %}">{% trans "AI chatbot" %}</a>
+      <a href="{% url 'recommendations:home' %}">{% trans "Recommendations" %}</a>
+    </div>
+    <div>
+      <h4>{% trans "Company" %}</h4>
+      <a href="{% url 'core:contact' %}">{% trans "Contact" %}</a>
+      <a href="#">{% trans "About" %}</a>
+      <a href="#">{% trans "Careers" %}</a>
+    </div>
+    <div>
+      <h4>{% trans "Account" %}</h4>
+      {% if request.user.is_authenticated %}
+        <a href="{% url 'dashboard:home' %}">{% trans "Dashboard" %}</a>
+        <a href="{% url 'accounts:profile' %}">{% trans "Profile" %}</a>
+      {% else %}
+        <a href="{% url 'accounts:login' %}">{% trans "Sign in" %}</a>
+        <a href="{% url 'accounts:signup' %}">{% trans "Sign up" %}</a>
+      {% endif %}
+    </div>
+  </div>
+  <div class="container footer-meta">
+    <small>© {% now "Y" %} {{ BRAND_NAME }}. {% trans "All rights reserved." %}</small>
+  </div>
+</footer>
+
+<script src="{% static 'js/app.js' %}?v=3" defer></script>
+{% block extra_scripts %}{% endblock %}
+</body>
+</html>

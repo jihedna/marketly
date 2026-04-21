@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Recommendations" %} — {{ BRAND_NAME }}{% endblock %}
+
+{% block content %}
+<section class="dashboard-wrap">
+  <div class="section-head" style="text-align:start; margin-bottom:16px;">
+    <span class="eyebrow">{% trans "Recommendations" %}</span>
+    <h2 style="margin:6px 0;">{% trans "Personalized suggestions" %}</h2>
+    <p>{% trans "Filtered by the work you've done so far. Generate a plan from any solution to grow this list." %}</p>
+  </div>
+
+  <div class="pill-list mb-2">
+    <a class="pill {% if not selected_kind %}tag-success{% endif %}" href="?">{% trans "All" %}</a>
+    {% for value, label in kinds %}
+      <a class="pill {% if selected_kind == value %}tag-success{% endif %}" href="?kind={{ value }}">{{ label }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="dash-grid">
+    {% for r in recommendations %}
+      <div class="dash-card span-6">
+        <span class="chip">{{ r.get_kind_display }}</span>
+        <h3 class="mt-1">{{ r.title }}</h3>
+        <p class="text-muted">{{ r.description }}</p>
+      </div>
+    {% empty %}
+      <div class="dash-card span-12 text-center">
+        <p class="meta">{% trans "No recommendations yet." %}</p>
+        <a class="btn-cta mt-2" href="{% url 'solutions:list' %}">{% trans "Browse solutions" %}</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

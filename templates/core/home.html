@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{{ BRAND_NAME }} — {% trans "Marketing strategies that grow brands" %}{% endblock %}
+{% block body_class %}home{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-badge">{% trans "AI-powered marketing planning" %}</span>
+      <h1>{% trans "Marketing strategies that" %} <span class="grad">{% trans "grow brands." %}</span></h1>
+      <p class="lead">{% trans "Plan, launch and scale premium campaigns across every channel — with AI assistance, ready-to-use playbooks, and a team-friendly dashboard." %}</p>
+      <div class="hero-ctas">
+        <a href="{% url 'solutions:list' %}" class="btn-cta">{% trans "Explore solutions" %}</a>
+        <a href="{% url 'billing:pricing' %}" class="btn-outline">{% trans "See pricing" %}</a>
+      </div>
+      <div class="hero-trust">
+        <span>⭐⭐⭐⭐⭐</span>
+        <span>{% trans "Trusted by growth teams worldwide" %}</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>{% trans "Your strategy, ready in minutes" %}</h3>
+      <p class="text-muted">{% trans "Tell us about your company and goals. We'll generate a full marketing plan tailored to your industry, budget, and audience." %}</p>
+      <div class="mini-stat-grid">
+        <div class="mini-stat"><div class="v">+320%</div><div class="l">{% trans "ROAS uplift" %}</div></div>
+        <div class="mini-stat"><div class="v">8×</div><div class="l">{% trans "Faster planning" %}</div></div>
+        <div class="mini-stat"><div class="v">24</div><div class="l">{% trans "Experiments/quarter" %}</div></div>
+        <div class="mini-stat"><div class="v">96%</div><div class="l">{% trans "Client retention" %}</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{% trans "Why Marketly" %}</span>
+      <h2>{% trans "Everything you need to plan world-class campaigns" %}</h2>
+      <p>{% trans "From briefs to budgets, from copy to KPIs — a single workspace for growth teams and agencies." %}</p>
+    </div>
+    <div class="feature-grid">
+      <div class="card"><div class="icon">🎯</div><h3>{% trans "Goal-first planning" %}</h3><p>{% trans "Every strategy starts with a measurable outcome — we keep you focused on what matters." %}</p></div>
+      <div class="card"><div class="icon">⚡</div><h3>{% trans "AI-assisted drafts" %}</h3><p>{% trans "Briefs, channel plans, and copy ideas generated in seconds and easy to refine." %}</p></div>
+      <div class="card"><div class="icon">📈</div><h3>{% trans "Benchmark-backed KPIs" %}</h3><p>{% trans "Industry benchmarks and best-in-class KPI targets for every channel." %}</p></div>
+      <div class="card"><div class="icon">🧩</div><h3>{% trans "Multi-channel mix" %}</h3><p>{% trans "Paid, organic, lifecycle, PR — plan them together instead of in silos." %}</p></div>
+      <div class="card"><div class="icon">🔁</div><h3>{% trans "Experiment cadence" %}</h3><p>{% trans "Bake in a steady test-and-learn rhythm to compound growth every month." %}</p></div>
+      <div class="card"><div class="icon">🌍</div><h3>{% trans "Multilingual" %}</h3><p>{% trans "Work in English, French or Arabic — with RTL layout support." %}</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{% trans "Solutions" %}</span>
+      <h2>{% trans "Six marketing solutions, ready to deploy" %}</h2>
+      <p>{% trans "Hand-crafted playbooks you can personalize and save in one click." %}</p>
+    </div>
+    <div class="solution-grid">
+      {% for s in solutions_preview %}
+        <a class="card" href="{% url 'solutions:detail' s.slug %}">
+          <div class="icon">{{ s.icon }}</div>
+          <h3>{{ s.title }}</h3>
+          <p class="tagline">{{ s.tagline }}</p>
+          <div class="row">
+            {% for b in s.benefits|slice:":3" %}<span class="chip">{{ b }}</span>{% endfor %}
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="stats-row">
+      {% for s in stats %}<div class="stat"><div class="v">{{ s.value }}</div><div class="l">{{ s.label }}</div></div>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{% trans "Testimonials" %}</span>
+      <h2>{% trans "Loved by growth teams" %}</h2>
+    </div>
+    <div class="testimonials">
+      {% for t in testimonials %}
+        <blockquote class="quote">
+          <p>“{{ t.quote }}”</p>
+          <footer>— {{ t.author }}, <em>{{ t.role }}</em></footer>
+        </blockquote>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="hero-card" style="text-align:center;">
+      <h2 style="font-size:clamp(24px,3vw,36px); margin-top:0;">{% trans "Ready to plan your next winning campaign?" %}</h2>
+      <p class="text-muted">{% trans "Start free — no credit card required." %}</p>
+      <div class="grid-cta" style="justify-content:center; margin-top:14px;">
+        <a href="{% url 'accounts:signup' %}" class="btn-cta">{% trans "Create a free account" %}</a>
+        <a href="{% url 'solutions:list' %}" class="btn-outline">{% trans "Explore solutions" %}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

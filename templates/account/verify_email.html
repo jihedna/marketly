@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Verify your email" %} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>{% trans "Verify your email" %}</h1>
+    <p class="lede">
+      {% if pending_user %}
+        {% blocktrans with email=pending_user.email %}We sent a 6-digit code to <strong>{{ email }}</strong>. Enter it below to activate your account.{% endblocktrans %}
+      {% else %}
+        {% trans "Enter the 6-digit code we emailed you." %}
+      {% endif %}
+    </p>
+    <form method="post">
+      {% csrf_token %}
+      <div class="field">
+        <label for="id_code">{% trans "Verification code" %}</label>
+        <input id="id_code" name="code" inputmode="numeric" maxlength="6" minlength="6" pattern="[0-9]{6}" required autofocus />
+        {% for e in form.code.errors %}<div class="errors">{{ e }}</div>{% endfor %}
+      </div>
+      <button class="btn-cta" type="submit" style="width:100%;">{% trans "Verify email" %}</button>
+      <div class="auth-meta" style="margin-top:14px;">
+        <button class="btn-ghost" type="submit" name="resend" value="1">{% trans "Resend code" %}</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

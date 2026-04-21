@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Sign in" %} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>{% trans "Welcome back" %}</h1>
+    <p class="lede">{% trans "Sign in to continue planning winning campaigns." %}</p>
+    <form method="post">
+      {% csrf_token %}
+      {% for e in form.non_field_errors %}<div class="errors">{{ e }}</div>{% endfor %}
+      <div class="field">
+        <label for="id_email">{% trans "Email" %}</label>
+        <input id="id_email" name="email" type="email" required value="{{ form.email.value|default:'' }}" />
+      </div>
+      <div class="field">
+        <label for="id_password">{% trans "Password" %}</label>
+        <input id="id_password" name="password" type="password" required />
+      </div>
+      <div class="auth-meta">
+        <a href="{% url 'accounts:password_reset' %}">{% trans "Forgot password?" %}</a>
+      </div>
+      <button type="submit" class="btn-cta mt-2" style="width:100%;">{% trans "Sign in" %}</button>
+    </form>
+    {% include 'account/_social.html' %}
+    <p class="auth-meta">{% trans "New to Marketly?" %} <a href="{% url 'accounts:signup' %}">{% trans "Create an account" %}</a></p>
+  </div>
+</div>
+{% endblock %}

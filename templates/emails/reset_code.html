@@ -1,0 +1,9 @@
+{% extends 'emails/_layout.html' %}
+{% load i18n %}
+{% block subject %}{% trans "Your Marketly password reset code" %}{% endblock %}
+{% block body %}
+<h2 style="margin:0 0 10px;">{% trans "Reset your password" %}</h2>
+<p style="color:#5a5772;">{% trans "Use this 6-digit code to set a new password." %}</p>
+<p style="font-size:32px;font-weight:800;letter-spacing:.2em;margin:16px 0;background:linear-gradient(135deg,#ff7a2d,#ff3d8b,#7a3cff);-webkit-background-clip:text;color:transparent;">{{ code }}</p>
+<p style="color:#8a8798;font-size:13px;">{% blocktrans %}This code expires in {{ ttl_minutes }} minutes.{% endblocktrans %}</p>
+{% endblock %}

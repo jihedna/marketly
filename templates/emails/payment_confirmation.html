@@ -1,0 +1,13 @@
+{% extends 'emails/_layout.html' %}
+{% load i18n %}
+{% block subject %}{% trans "Payment confirmed — thank you!" %}{% endblock %}
+{% block body %}
+<h2 style="margin:0 0 10px;">{% trans "Thanks for your payment" %}</h2>
+<p style="color:#5a5772;">{% trans "Your subscription is active and premium features are unlocked." %}</p>
+<table style="width:100%;margin-top:10px;border-collapse:collapse;">
+  <tr><td style="color:#5a5772;padding:6px 0;">{% trans "Plan" %}</td><td style="text-align:end;font-weight:700;">{{ transaction.plan.name|default:"—" }}</td></tr>
+  <tr><td style="color:#5a5772;padding:6px 0;">{% trans "Amount" %}</td><td style="text-align:end;font-weight:700;">{{ transaction.amount_display }}</td></tr>
+  <tr><td style="color:#5a5772;padding:6px 0;">{% trans "Reference" %}</td><td style="text-align:end;">#{{ transaction.id }}</td></tr>
+</table>
+<p style="margin-top:16px;"><a href="{{ site_url }}" style="display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(135deg,#ff7a2d,#ff3d8b,#7a3cff);color:#fff;text-decoration:none;font-weight:700;">{% trans "Back to dashboard" %}</a></p>
+{% endblock %}
