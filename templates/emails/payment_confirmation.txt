@@ -1,0 +1,5 @@
+{% load i18n %}{% trans "Payment confirmed." %}
+
+{% trans "Plan" %}: {{ transaction.plan.name|default:"—" }}
+{% trans "Amount" %}: {{ transaction.amount_display }}
+{% trans "Reference" %}: #{{ transaction.id }}

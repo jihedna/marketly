@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Checkout" %} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <div class="auth-card">
+    <h1>{% trans "Checkout" %}</h1>
+    <p class="lede">{% trans "You are about to subscribe to the following plan:" %}</p>
+    <div class="card" style="margin-bottom:18px;">
+      <h3 style="margin:0;">{{ plan.name }}</h3>
+      <p class="text-muted">{{ plan.tagline }}</p>
+      <p style="font-size:28px; font-weight:800; margin:8px 0 0;">{{ plan.price_display }}<span class="text-muted" style="font-weight:500; font-size:14px;"> {% if plan.price_cents > 0 %}/{{ plan.get_interval_display|lower }}{% endif %}</span></p>
+    </div>
+    {% if not stripe_configured and plan.price_cents > 0 %}
+      <p class="text-muted" style="font-size:13px;">{% trans "Stripe is not configured in this environment — clicking 'Pay' will simulate a successful test payment for development." %}</p>
+    {% endif %}
+    <form method="post">
+      {% csrf_token %}
+      <button class="btn-cta" type="submit" style="width:100%;">
+        {% if plan.price_cents == 0 %}{% trans "Activate free plan" %}{% else %}{% trans "Proceed to payment" %}{% endif %}
+      </button>
+    </form>
+    <p class="auth-meta"><a href="{% url 'billing:pricing' %}">{% trans "Back to pricing" %}</a></p>
+  </div>
+</div>
+{% endblock %}

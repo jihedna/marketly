@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Pricing" %} — {{ BRAND_NAME }}{% endblock %}
+
+{% block content %}
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{% trans "Pricing" %}</span>
+      <h2>{% trans "Plans that scale with your marketing" %}</h2>
+      <p>{% trans "Start free. Upgrade any time. Cancel whenever." %}</p>
+    </div>
+    <div class="pricing-grid">
+      {% for p in plans %}
+        <div class="card price-card {% if p.is_recommended %}featured{% endif %}">
+          {% if p.is_recommended %}<span class="chip" style="align-self:flex-start;">{% trans "Most popular" %}</span>{% endif %}
+          <h3>{{ p.name }}</h3>
+          <p class="text-muted">{{ p.tagline }}</p>
+          <div class="price">{{ p.price_display }}</div>
+          <div class="period">{% if p.price_cents > 0 %}/{{ p.get_interval_display|lower }}{% endif %}</div>
+          <ul>
+            {% for f in p.features %}<li>{{ f }}</li>{% endfor %}
+          </ul>
+          <a class="btn-cta" href="{% url 'billing:checkout' p.slug %}">{% if p.price_cents == 0 %}{% trans "Start for free" %}{% else %}{% trans "Choose plan" %}{% endif %}</a>
+        </div>
+      {% empty %}
+        <p class="text-muted">{% trans "Plans will appear here once seeded. Run: python manage.py seed_demo" %}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

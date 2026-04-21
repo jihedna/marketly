@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Configure strategy" %} — {{ solution.title|default:"Marketly" }}{% endblock %}
+
+{% block content %}
+<section class="wizard" data-wizard data-step="{{ step }}">
+  <div class="stepper" aria-label="{% trans 'Steps' %}">
+    <div class="step" data-wizard-step="1"></div>
+    <div class="step" data-wizard-step="2"></div>
+    <div class="step" data-wizard-step="3"></div>
+  </div>
+
+  <div class="wizard-card">
+    <span class="chip">{{ solution.icon|default:"✨" }} {{ solution.title|default:slug }}</span>
+
+    {% if step == 1 %}
+      <h2>{% trans "Step 1 — Company information" %}</h2>
+      <p class="text-muted">{% trans "Tell us about your company so we can tailor the plan." %}</p>
+      <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="step" value="1" />
+        <div class="field"><label>{% trans "Company name" %}</label>{{ company_form.name }}</div>
+        <div class="field-row">
+          <div class="field"><label>{% trans "Industry" %}</label>{{ company_form.industry }}</div>
+          <div class="field"><label>{% trans "Company size" %}</label>{{ company_form.size }}</div>
+        </div>
+        <div class="field"><label>{% trans "Website" %}</label>{{ company_form.website }}</div>
+        <div class="wizard-actions">
+          <a class="btn-outline" href="{% url 'solutions:detail' slug %}">{% trans "Cancel" %}</a>
+          <button class="btn-cta" type="submit">{% trans "Continue" %} →</button>
+        </div>
+      </form>
+
+    {% elif step == 2 %}
+      <h2>{% trans "Step 2 — Campaign details" %}</h2>
+      <p class="text-muted">{% trans "Define your goals, audience and budget." %}</p>
+      <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="step" value="2" />
+        <div class="field"><label>{% trans "Objective" %}</label>{{ campaign_form.objective }}</div>
+        <div class="field"><label>{% trans "Target audience" %}</label>{{ campaign_form.audience }}</div>
+        <div class="field-row">
+          <div class="field"><label>{% trans "Budget" %}</label>{{ campaign_form.budget }}</div>
+          <div class="field"><label>{% trans "Duration" %}</label>{{ campaign_form.duration }}</div>
+        </div>
+        <div class="field"><label>{% trans "Current challenges" %}</label>{{ campaign_form.challenges }}</div>
+        <div class="wizard-actions">
+          <a class="btn-outline" href="?step=1">← {% trans "Back" %}</a>
+          <button class="btn-cta" type="submit">{% trans "Generate plan" %} →</button>
+        </div>
+      </form>
+
+    {% elif step == 3 %}
+      <h2>{% trans "Step 3 — Your personalized plan" %}</h2>
+      <p class="text-muted">{% trans "Review the generated plan and save it to your dashboard." %}</p>
+
+      {% if plan %}
+        <div class="plan-header" style="margin-top:10px;">
+          <h3 style="margin:0 0 6px;">{{ plan.meta.solution_title|default:solution.title }}</h3>
+          <p>{{ plan.executive_summary }}</p>
+        </div>
+
+        <div class="dash-grid mt-3">
+          <div class="dash-card span-6">
+            <h3>{% trans "Marketing objectives" %}</h3>
+            <ul class="small-list">{% for o in plan.marketing_objectives %}<li>{{ o }}</li>{% endfor %}</ul>
+          </div>
+          <div class="dash-card span-6">
+            <h3>{% trans "Recommended channels" %}</h3>
+            <div class="pill-list">{% for c in plan.recommended_channels %}<span class="pill">{{ c }}</span>{% endfor %}</div>
+          </div>
+          <div class="dash-card span-6">
+            <h3>{% trans "Budget estimate" %}</h3>
+            <p class="mt-0"><strong>{{ plan.budget_estimate.monthly_display }}</strong></p>
+            <p class="text-muted">{{ plan.budget_estimate.total_display }}</p>
+            <div class="alloc-bar">
+              {% for a in plan.budget_estimate.allocation %}<span style="width:{{ a.share }}%;"></span>{% endfor %}
+            </div>
+            <ul class="small-list">{% for a in plan.budget_estimate.allocation %}<li>{{ a.channel }}<span class="tag">{{ a.share }}%</span></li>{% endfor %}</ul>
+          </div>
+          <div class="dash-card span-6">
+            <h3>{% trans "KPIs" %}</h3>
+            <table class="table"><tbody>
+              {% for k in plan.kpis %}<tr><td>{{ k.name }}</td><td style="text-align:end;"><strong>{{ k.target }}</strong></td></tr>{% endfor %}
+            </tbody></table>
+          </div>
+          <div class="dash-card span-12">
+            <h3>{% trans "Campaign timeline" %}</h3>
+            <ul class="timeline">
+              {% for t in plan.campaign_timeline %}<li><strong>{{ t.label }}</strong>{{ t.title }} — <span class="text-muted">{{ t.detail }}</span></li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+
+        <form method="post" class="mt-3">
+          {% csrf_token %}
+          <input type="hidden" name="step" value="3" />
+          <div class="wizard-actions">
+            <a class="btn-outline" href="?step=2">← {% trans "Back" %}</a>
+            <div>
+              <button class="btn-cta" type="submit" name="save" value="1">{% trans "Save plan to my dashboard" %}</button>
+            </div>
+          </div>
+        </form>
+      {% else %}
+        <p>{% trans "Please complete the previous steps to generate your plan." %}</p>
+        <a class="btn-cta" href="?step=1">{% trans "Start over" %}</a>
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

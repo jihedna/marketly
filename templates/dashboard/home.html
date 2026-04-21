@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load i18n humanize %}
+{% block title %}{% trans "Dashboard" %} — {{ BRAND_NAME }}{% endblock %}
+
+{% block content %}
+<section class="dashboard-wrap">
+  <div style="display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;">
+    <div>
+      <h1 style="margin-bottom:4px;">{% trans "Hello" %}, {{ request.user.display_name }} 👋</h1>
+      <p class="text-muted">{% trans "Here's a snapshot of your marketing work." %}</p>
+    </div>
+    <div class="grid-cta">
+      <a class="btn-cta" href="{% url 'solutions:list' %}">{% trans "New strategy" %}</a>
+      <a class="btn-outline" href="{% url 'chatbot:home' %}">{% trans "Open AI chatbot" %}</a>
+    </div>
+  </div>
+
+  <div class="dash-grid mt-3">
+    <div class="dash-card span-4">
+      <h3>{% trans "Your profile" %}</h3>
+      <p class="meta">{{ request.user.email }}</p>
+      <p class="meta">{% trans "Language" %}: {{ request.user.profile.get_preferred_language_display }}</p>
+      <p class="meta">{% trans "Theme" %}: {{ request.user.profile.get_preferred_theme_display }}</p>
+      <a href="{% url 'accounts:profile' %}" class="btn-outline mt-2">{% trans "Edit profile" %}</a>
+    </div>
+    <div class="dash-card span-4">
+      <h3>{% trans "Subscription" %}</h3>
+      {% if subscription %}
+        <p><strong>{{ subscription.plan.name|default:'—' }}</strong></p>
+        <p class="meta">{% trans "Status" %}: <span class="tag {% if subscription.status == 'active' %}tag-success{% endif %}">{{ subscription.get_status_display }}</span></p>
+      {% else %}
+        <p class="meta">{% trans "You're on the free plan." %}</p>
+      {% endif %}
+      <a href="{% url 'billing:pricing' %}" class="btn-outline mt-2">{% trans "Manage plan" %}</a>
+    </div>
+    <div class="dash-card span-4">
+      <h3>{% trans "Quick actions" %}</h3>
+      <ul class="small-list">
+        <li><a href="{% url 'solutions:list' %}">{% trans "Browse solutions" %}</a></li>
+        <li><a href="{% url 'recommendations:home' %}">{% trans "View recommendations" %}</a></li>
+        <li><a href="{% url 'chatbot:home' %}">{% trans "Ask the AI chatbot" %}</a></li>
+      </ul>
+    </div>
+
+    <div class="dash-card span-8">
+      <h3>{% trans "Saved strategies" %}</h3>
+      {% if strategies %}
+        <ul class="small-list">
+          {% for p in strategies %}
+            <li><a href="{{ p.get_absolute_url }}">{{ p.title }}</a><span class="meta">{{ p.created_at|naturaltime }}</span></li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="meta">{% trans "No saved strategies yet. Start from a solution." %}</p>
+      {% endif %}
+    </div>
+    <div class="dash-card span-4">
+      <h3>{% trans "Recent chats" %}</h3>
+      {% if conversations %}
+        <ul class="small-list">
+          {% for c in conversations %}
+            <li><a href="{% url 'chatbot:conversation' c.pk %}">{{ c.title }}</a><span class="meta">{{ c.updated_at|naturaltime }}</span></li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="meta">{% trans "No conversations yet." %}</p>
+      {% endif %}
+    </div>
+
+    <div class="dash-card span-6">
+      <h3>{% trans "Campaign projects" %}</h3>
+      {% if projects %}
+        <ul class="small-list">
+          {% for p in projects %}<li>{{ p.name }}<span class="tag">{{ p.get_status_display }}</span></li>{% endfor %}
+        </ul>
+      {% else %}<p class="meta">{% trans "No projects yet." %}</p>{% endif %}
+    </div>
+    <div class="dash-card span-6">
+      <h3>{% trans "Recommendations" %}</h3>
+      {% if recommendations %}
+        <ul class="small-list">
+          {% for r in recommendations %}<li>{{ r.title }}<span class="tag">{{ r.get_kind_display }}</span></li>{% endfor %}
+        </ul>
+      {% else %}<p class="meta">{% trans "Generate a plan to see recommendations." %}</p>{% endif %}
+    </div>
+
+    <div class="dash-card span-12">
+      <h3>{% trans "Payment history" %}</h3>
+      {% if transactions %}
+        <table class="table"><thead><tr><th>{% trans 'Date' %}</th><th>{% trans 'Plan' %}</th><th>{% trans 'Amount' %}</th><th>{% trans 'Status' %}</th></tr></thead>
+        <tbody>
+          {% for t in transactions %}
+            <tr>
+              <td>{{ t.created_at|date:"M j, Y" }}</td>
+              <td>{{ t.plan.name|default:'—' }}</td>
+              <td>{{ t.amount_display }}</td>
+              <td><span class="tag {% if t.status == 'succeeded' %}tag-success{% endif %}">{{ t.get_status_display }}</span></td>
+            </tr>
+          {% endfor %}
+        </tbody></table>
+      {% else %}
+        <p class="meta">{% trans "No transactions yet." %}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

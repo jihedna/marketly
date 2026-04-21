@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Page not found" %} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<section class="err-wrap">
+  <div>
+    <h1>404</h1>
+    <h2>{% trans "We can't find that page." %}</h2>
+    <p>{% trans "It may have moved or never existed. Let's get you back on track." %}</p>
+    <div class="grid-cta" style="justify-content:center; margin-top:18px;">
+      <a href="{% url 'core:home' %}" class="btn-cta">{% trans "Back to home" %}</a>
+      <a href="{% url 'solutions:list' %}" class="btn-outline">{% trans "Browse solutions" %}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

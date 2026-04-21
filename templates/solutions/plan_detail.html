@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{{ plan.title }} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<section class="plan-wrap">
+  <div class="plan-header">
+    <h1>{{ plan.title }}</h1>
+    <p>{{ plan.summary }}</p>
+  </div>
+
+  <div class="plan-grid">
+    <section class="span-6">
+      <h3>{% trans "Executive summary" %}</h3>
+      <p class="text-muted">{{ data.executive_summary }}</p>
+    </section>
+    <section class="span-6">
+      <h3>{% trans "Value proposition" %}</h3>
+      <p class="text-muted">{{ data.value_proposition }}</p>
+    </section>
+
+    <section class="span-4">
+      <h3>{% trans "Strengths" %}</h3>
+      <ul class="small-list">{% for s in data.business_analysis.strengths %}<li>{{ s }}</li>{% endfor %}</ul>
+    </section>
+    <section class="span-4">
+      <h3>{% trans "Opportunities" %}</h3>
+      <ul class="small-list">{% for s in data.business_analysis.opportunities %}<li>{{ s }}</li>{% endfor %}</ul>
+    </section>
+    <section class="span-4">
+      <h3>{% trans "Risks" %}</h3>
+      <ul class="small-list">{% for s in data.business_analysis.risks %}<li>{{ s }}</li>{% endfor %}</ul>
+    </section>
+
+    <section class="span-6">
+      <h3>{% trans "Target audience" %}</h3>
+      <p class="text-muted">{{ data.target_audience }}</p>
+    </section>
+    <section class="span-6">
+      <h3>{% trans "Recommended channels" %}</h3>
+      <div class="pill-list">{% for c in data.recommended_channels %}<span class="pill">{{ c }}</span>{% endfor %}</div>
+    </section>
+
+    <section class="span-6">
+      <h3>{% trans "Marketing objectives" %}</h3>
+      <ul class="small-list">{% for o in data.marketing_objectives %}<li>{{ o }}</li>{% endfor %}</ul>
+    </section>
+    <section class="span-6">
+      <h3>{% trans "KPIs" %}</h3>
+      <table class="table"><tbody>{% for k in data.kpis %}<tr><td>{{ k.name }}</td><td style="text-align:end;"><strong>{{ k.target }}</strong></td></tr>{% endfor %}</tbody></table>
+    </section>
+
+    <section class="span-12">
+      <h3>{% trans "Campaign timeline" %}</h3>
+      <ul class="timeline">{% for t in data.campaign_timeline %}<li><strong>{{ t.label }}</strong>{{ t.title }} — <span class="text-muted">{{ t.detail }}</span></li>{% endfor %}</ul>
+    </section>
+
+    <section class="span-6">
+      <h3>{% trans "Budget estimate" %}</h3>
+      <p><strong>{{ data.budget_estimate.monthly_display }}</strong></p>
+      <p class="text-muted">{{ data.budget_estimate.total_display }}</p>
+      <div class="alloc-bar">{% for a in data.budget_estimate.allocation %}<span style="width:{{ a.share }}%;"></span>{% endfor %}</div>
+      <ul class="small-list">{% for a in data.budget_estimate.allocation %}<li>{{ a.channel }}<span class="tag">{{ a.share }}%</span></li>{% endfor %}</ul>
+    </section>
+    <section class="span-6">
+      <h3>{% trans "Optimization" %}</h3>
+      <ul class="small-list">{% for r in data.optimization_recommendations %}<li>{{ r }}</li>{% endfor %}</ul>
+    </section>
+
+    <section class="span-12">
+      <h3>{% trans "Next steps" %}</h3>
+      <ul class="small-list">{% for n in data.next_steps %}<li>{{ n }}</li>{% endfor %}</ul>
+      <div class="grid-cta mt-3">
+        <a class="btn-cta" href="{% url 'billing:pricing' %}">{% trans "Unlock premium features" %}</a>
+        <a class="btn-outline" href="{% url 'chatbot:home' %}">{% trans "Refine with AI chat" %}</a>
+      </div>
+    </section>
+  </div>
+</section>
+{% endblock %}

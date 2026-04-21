@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Payment canceled" %} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <div class="auth-card text-center">
+    <h1>{% trans "Payment canceled" %}</h1>
+    <p class="lede">{% trans "No worries — you can try again any time." %}</p>
+    <div class="grid-cta" style="justify-content:center;">
+      <a href="{% url 'billing:pricing' %}" class="btn-cta">{% trans "Back to pricing" %}</a>
+      <a href="{% url 'dashboard:home' %}" class="btn-outline">{% trans "Go to dashboard" %}</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

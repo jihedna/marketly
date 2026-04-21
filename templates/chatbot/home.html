@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "AI chatbot" %} — {{ BRAND_NAME }}{% endblock %}
+
+{% block content %}
+<section class="chat-layout">
+  <aside class="chat-sidebar" data-chat-sidebar>
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:8px;">
+      <strong>{% trans "Conversations" %}</strong>
+      <a class="btn-outline" href="{% url 'chatbot:new' %}" style="padding:6px 10px; font-size:12px;">+ {% trans "New" %}</a>
+    </div>
+    {% for c in conversations %}
+      <a href="{% url 'chatbot:conversation' c.pk %}" class="{% if conversation and conversation.pk == c.pk %}active{% endif %}">{{ c.title|truncatechars:36 }}</a>
+    {% empty %}
+      <p class="meta">{% trans "Start a new chat to begin." %}</p>
+    {% endfor %}
+  </aside>
+
+  <section class="chat-main">
+    <header class="chat-header">
+      <div>
+        <strong data-conv-title>{% if conversation %}{{ conversation.title }}{% else %}{% trans "New conversation" %}{% endif %}</strong>
+        <div class="meta">{% trans "AI marketing assistant" %}</div>
+      </div>
+      <span class="chip">{% trans "Mock provider — wire a real LLM later" %}</span>
+    </header>
+    <div class="chat-body" data-chat-body>
+      {% if messages %}
+        {% for m in messages %}
+          <div class="msg {{ m.role }}">{{ m.content }}</div>
+        {% endfor %}
+      {% else %}
+        <div class="msg assistant">{% trans "Hi! I'm your marketing assistant. Ask me about strategy, channels, budgets, creative ideas, or KPIs." %}</div>
+      {% endif %}
+    </div>
+    <div class="suggestions">
+      {% for s in suggestions %}<button type="button" data-suggestion>{{ s }}</button>{% endfor %}
+    </div>
+    <form class="chat-footer" data-chat-form>
+      {% csrf_token %}
+      <input type="hidden" name="conversation_id" value="{{ conversation.pk|default:'' }}" />
+      <textarea placeholder="{% trans 'Ask anything about marketing…' %}" rows="1"></textarea>
+      <button class="btn-cta" type="submit">{% trans "Send" %}</button>
+    </form>
+  </section>
+</section>
+{% endblock %}

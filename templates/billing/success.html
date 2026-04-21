@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Payment successful" %} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <div class="auth-card text-center">
+    <div style="font-size:48px;">🎉</div>
+    <h1>{% trans "You're all set!" %}</h1>
+    <p class="lede">{% trans "Thanks for upgrading. Premium features are now unlocked." %}</p>
+    {% if txn %}<p class="text-muted">{% trans "Reference" %}: #{{ txn.id }}</p>{% endif %}
+    <a href="{% url 'dashboard:home' %}" class="btn-cta mt-2" style="width:100%;">{% trans "Go to dashboard" %}</a>
+  </div>
+</div>
+{% endblock %}

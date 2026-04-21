@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+db.sqlite3
+db.sqlite3-journal
+staticfiles/
+media/
+.DS_Store
+.idea/
+.vscode/
+*.log
+locale/*/LC_MESSAGES/*.mo

@@ -1,0 +1,16 @@
+{% load i18n %}<!doctype html>
+<html><head><meta charset="utf-8"><title>{% block subject %}Marketly{% endblock %}</title></head>
+<body style="margin:0;background:#f6f4f0;font-family:Plus Jakarta Sans,Arial,sans-serif;color:#141225;">
+<div style="max-width:560px;margin:0 auto;padding:24px;">
+  <div style="background:#fff;border-radius:20px;padding:28px;box-shadow:0 12px 32px -16px rgba(20,18,37,.15);">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;">
+      <div style="width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#ff7a2d,#ff3d8b,#7a3cff);"></div>
+      <strong>Marketly</strong>
+    </div>
+    {% block body %}{% endblock %}
+  </div>
+  <p style="color:#8a8798;font-size:12px;text-align:center;margin-top:16px;">
+    © Marketly · {% trans "Marketing strategies that grow brands." %}
+  </p>
+</div>
+</body></html>

@@ -1,0 +1,1794 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-21 14:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: apps/accounts/emails.py:20 templates/emails/verification_code.html:3
+msgid "Your Marketly verification code"
+msgstr ""
+
+#: apps/accounts/emails.py:29 templates/emails/reset_code.html:3
+msgid "Your Marketly password reset code"
+msgstr ""
+
+#: apps/accounts/emails.py:38 templates/emails/welcome.html:3
+#: templates/emails/welcome.html:5
+msgid "Welcome to Marketly!"
+msgstr ""
+
+#: apps/accounts/emails.py:47 templates/emails/payment_confirmation.html:3
+msgid "Payment confirmed — thank you!"
+msgstr ""
+
+#: apps/accounts/forms.py:19 templates/account/login.html:17
+#: templates/account/signup.html:28
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: apps/accounts/forms.py:20 templates/account/signup.html:33
+msgid "Confirm password"
+msgstr "تأكيد كلمة المرور"
+
+#: apps/accounts/forms.py:25
+msgid "An account with this email already exists."
+msgstr ""
+
+#: apps/accounts/forms.py:33 apps/accounts/forms.py:93
+msgid "Passwords do not match."
+msgstr "كلمات المرور غير متطابقة."
+
+#: apps/accounts/forms.py:69
+msgid "Invalid email or password."
+msgstr "البريد الإلكتروني أو كلمة المرور غير صحيحة."
+
+#: apps/accounts/forms.py:85 templates/account/password_reset_confirm.html:21
+msgid "New password"
+msgstr "كلمة مرور جديدة"
+
+#: apps/accounts/forms.py:86
+msgid "Confirm new password"
+msgstr "تأكيد كلمة المرور الجديدة"
+
+#: apps/accounts/models.py:46
+msgid "email address"
+msgstr ""
+
+#: apps/accounts/models.py:55
+msgid "user"
+msgstr ""
+
+#: apps/accounts/models.py:56
+msgid "users"
+msgstr ""
+
+#: apps/accounts/models.py:68
+msgid "Light"
+msgstr "فاتح"
+
+#: apps/accounts/models.py:68
+msgid "Dark"
+msgstr "داكن"
+
+#: apps/accounts/models.py:86
+msgid "1-10 employees"
+msgstr ""
+
+#: apps/accounts/models.py:87
+msgid "11-50 employees"
+msgstr ""
+
+#: apps/accounts/models.py:88
+msgid "51-200 employees"
+msgstr ""
+
+#: apps/accounts/models.py:89
+msgid "201-1000 employees"
+msgstr ""
+
+#: apps/accounts/models.py:90
+msgid "1000+ employees"
+msgstr ""
+
+#: apps/accounts/models.py:144
+msgid "Email verification code"
+msgstr ""
+
+#: apps/accounts/models.py:145
+msgid "Email verification codes"
+msgstr ""
+
+#: apps/accounts/models.py:150
+msgid "Password reset code"
+msgstr ""
+
+#: apps/accounts/models.py:151
+msgid "Password reset codes"
+msgstr ""
+
+#: apps/accounts/views.py:43
+#, python-format
+msgid "Account created! We sent a 6-digit verification code to %(email)s."
+msgstr ""
+
+#: apps/accounts/views.py:66
+#, python-format
+msgid "Please verify your email to continue. A new code was sent to %(email)s."
+msgstr ""
+
+#: apps/accounts/views.py:71
+#, python-format
+msgid "Welcome back, %(name)s!"
+msgstr ""
+
+#: apps/accounts/views.py:79
+msgid "You have been signed out."
+msgstr "تم تسجيل خروجك."
+
+#: apps/accounts/views.py:104
+msgid "A new verification code has been sent."
+msgstr ""
+
+#: apps/accounts/views.py:110
+msgid "No pending verification found. Please sign up or log in again."
+msgstr ""
+
+#: apps/accounts/views.py:121 apps/accounts/views.py:179
+msgid "Invalid or expired code."
+msgstr "الرمز غير صالح أو منتهي الصلاحية."
+
+#: apps/accounts/views.py:129
+msgid "Email verified! Welcome to Marketly."
+msgstr ""
+
+#: apps/accounts/views.py:150
+#, python-format
+msgid "If an account exists for %(email)s, a reset code has been sent."
+msgstr ""
+
+#: apps/accounts/views.py:171
+msgid "No account matches that email."
+msgstr ""
+
+#: apps/accounts/views.py:186
+msgid "Password updated. You are now signed in."
+msgstr ""
+
+#: apps/accounts/views.py:210
+msgid "Profile updated."
+msgstr "تم تحديث الملف الشخصي."
+
+#: apps/billing/models.py:10
+msgid "Monthly"
+msgstr "شهري"
+
+#: apps/billing/models.py:10
+msgid "Yearly"
+msgstr "سنوي"
+
+#: apps/billing/models.py:10
+msgid "One-time"
+msgstr "لمرة واحدة"
+
+#: apps/billing/models.py:39
+msgid "Inactive"
+msgstr "غير نشط"
+
+#: apps/billing/models.py:40
+msgid "Trialing"
+msgstr ""
+
+#: apps/billing/models.py:41 apps/solutions/models.py:41
+msgid "Active"
+msgstr "نشط"
+
+#: apps/billing/models.py:42
+msgid "Past due"
+msgstr ""
+
+#: apps/billing/models.py:43
+msgid "Canceled"
+msgstr ""
+
+#: apps/billing/models.py:63
+msgid "Pending"
+msgstr "قيد الانتظار"
+
+#: apps/billing/models.py:64
+msgid "Succeeded"
+msgstr "ناجح"
+
+#: apps/billing/models.py:65
+msgid "Failed"
+msgstr "فشل"
+
+#: apps/billing/models.py:66
+msgid "Refunded"
+msgstr ""
+
+#: apps/billing/views.py:70
+msgid "Free plan activated."
+msgstr ""
+
+#: apps/billing/views.py:77
+msgid "Stripe is not configured, simulating a successful test payment."
+msgstr ""
+
+#: apps/core/views.py:25
+msgid "Average ROAS uplift"
+msgstr ""
+
+#: apps/core/views.py:26
+msgid "Leads generated"
+msgstr ""
+
+#: apps/core/views.py:27 templates/core/home.html:29
+msgid "Client retention"
+msgstr ""
+
+#: apps/core/views.py:28
+msgid "Countries served"
+msgstr ""
+
+#: apps/core/views.py:33
+msgid ""
+"Marketly transformed how we approach campaign planning. We shipped our "
+"strongest quarter ever."
+msgstr ""
+
+#: apps/core/views.py:37
+msgid "Head of Growth, Nova Retail"
+msgstr ""
+
+#: apps/core/views.py:41
+msgid ""
+"The AI recommendations saved us weeks of research and helped us reallocate "
+"our ad spend with confidence."
+msgstr ""
+
+#: apps/core/views.py:45
+msgid "CMO, Helix Analytics"
+msgstr ""
+
+#: apps/core/views.py:49
+msgid ""
+"From branding to paid ads, it's a single place where our team plans, "
+"executes, and reports."
+msgstr ""
+
+#: apps/core/views.py:53
+msgid "Founder, Atlas Studio"
+msgstr ""
+
+#: apps/core/views.py:70
+msgid "Please fill in all required fields."
+msgstr ""
+
+#: apps/core/views.py:73
+#, python-format
+msgid "New contact message from %(name)s"
+msgstr ""
+
+#: apps/core/views.py:79
+msgid "Thanks! We'll get back to you shortly."
+msgstr ""
+
+#: apps/solutions/catalog.py:10
+msgid "Social media strategy"
+msgstr ""
+
+#: apps/solutions/catalog.py:11
+msgid "Grow audiences across every platform with intent."
+msgstr ""
+
+#: apps/solutions/catalog.py:13
+msgid ""
+"A full-funnel social strategy that turns passive scrollers into loyal "
+"customers, with content pillars, influencer collaborations, and paid "
+"amplification."
+msgstr ""
+
+#: apps/solutions/catalog.py:18
+msgid "Clear content pillars and calendar"
+msgstr ""
+
+#: apps/solutions/catalog.py:19
+msgid "Platform-specific creative briefs"
+msgstr ""
+
+#: apps/solutions/catalog.py:20
+msgid "Influencer & UGC shortlists"
+msgstr ""
+
+#: apps/solutions/catalog.py:21
+msgid "Monthly performance reviews"
+msgstr ""
+
+#: apps/solutions/catalog.py:24
+msgid "Audit current channels and competitors"
+msgstr ""
+
+#: apps/solutions/catalog.py:25
+msgid "Define personas and content pillars"
+msgstr ""
+
+#: apps/solutions/catalog.py:26
+msgid "Produce creative and schedule"
+msgstr ""
+
+#: apps/solutions/catalog.py:27
+msgid "Launch, measure, iterate"
+msgstr ""
+
+#: apps/solutions/catalog.py:30
+msgid "D2C brand launching a new product line"
+msgstr ""
+
+#: apps/solutions/catalog.py:31
+msgid "B2B SaaS building thought leadership"
+msgstr ""
+
+#: apps/solutions/catalog.py:32
+msgid "Local business driving footfall"
+msgstr ""
+
+#: apps/solutions/catalog.py:35
+#, python-format
+msgid ""
+"Nova Retail grew Instagram engagement by 4.3× and reduced CAC by 38% in 90 "
+"days."
+msgstr ""
+
+#: apps/solutions/catalog.py:41
+msgid "Paid ads strategy"
+msgstr ""
+
+#: apps/solutions/catalog.py:42
+msgid "Scale customer acquisition with measurable paid media."
+msgstr ""
+
+#: apps/solutions/catalog.py:44
+msgid ""
+"Multi-channel paid media strategy across Meta, Google, TikTok and LinkedIn "
+"built on forecasted unit economics."
+msgstr ""
+
+#: apps/solutions/catalog.py:48
+msgid "Full-funnel campaign architecture"
+msgstr ""
+
+#: apps/solutions/catalog.py:49
+msgid "Creative testing framework"
+msgstr ""
+
+#: apps/solutions/catalog.py:50
+msgid "Bid and budget pacing automation"
+msgstr ""
+
+#: apps/solutions/catalog.py:51
+msgid "Weekly performance reports"
+msgstr ""
+
+#: apps/solutions/catalog.py:54
+msgid "Map funnel and KPIs"
+msgstr ""
+
+#: apps/solutions/catalog.py:55
+msgid "Design campaign architecture"
+msgstr ""
+
+#: apps/solutions/catalog.py:56
+msgid "Launch creative tests"
+msgstr ""
+
+#: apps/solutions/catalog.py:57
+msgid "Scale winning cohorts"
+msgstr ""
+
+#: apps/solutions/catalog.py:60
+msgid "E-commerce scaling to new geos"
+msgstr ""
+
+#: apps/solutions/catalog.py:61
+msgid "SaaS driving demo bookings"
+msgstr ""
+
+#: apps/solutions/catalog.py:62
+msgid "Marketplace boosting liquidity"
+msgstr ""
+
+#: apps/solutions/catalog.py:65
+msgid ""
+"Helix Analytics lowered cost-per-demo by 52% while tripling booked meetings."
+msgstr ""
+
+#: apps/solutions/catalog.py:71
+msgid "Branding strategy"
+msgstr ""
+
+#: apps/solutions/catalog.py:72
+msgid "Define a distinct voice, story and identity."
+msgstr ""
+
+#: apps/solutions/catalog.py:74
+msgid ""
+"From brand archetype to visual system — everything that makes your brand "
+"unmistakable at every touchpoint."
+msgstr ""
+
+#: apps/solutions/catalog.py:78
+msgid "Brand positioning statement"
+msgstr ""
+
+#: apps/solutions/catalog.py:79
+msgid "Tone of voice guidelines"
+msgstr ""
+
+#: apps/solutions/catalog.py:80
+msgid "Visual identity system"
+msgstr ""
+
+#: apps/solutions/catalog.py:81
+msgid "Rollout playbook"
+msgstr ""
+
+#: apps/solutions/catalog.py:84
+msgid "Discovery workshops"
+msgstr ""
+
+#: apps/solutions/catalog.py:85
+msgid "Positioning & narrative"
+msgstr ""
+
+#: apps/solutions/catalog.py:86
+msgid "Visual identity design"
+msgstr ""
+
+#: apps/solutions/catalog.py:87
+msgid "Guidelines & rollout"
+msgstr ""
+
+#: apps/solutions/catalog.py:90
+msgid "Rebrand after a funding round"
+msgstr ""
+
+#: apps/solutions/catalog.py:91
+msgid "New product sub-brand"
+msgstr ""
+
+#: apps/solutions/catalog.py:92
+msgid "Refreshing legacy brands"
+msgstr ""
+
+#: apps/solutions/catalog.py:94
+msgid "Atlas Studio's rebrand lifted aided recall by 3.8× in 6 months."
+msgstr ""
+
+#: apps/solutions/catalog.py:99
+msgid "SEO & content strategy"
+msgstr ""
+
+#: apps/solutions/catalog.py:100
+msgid "Win compounding organic traffic."
+msgstr ""
+
+#: apps/solutions/catalog.py:102
+msgid ""
+"Search-first content planning across topical clusters, technical SEO "
+"foundations, and programmatic content opportunities."
+msgstr ""
+
+#: apps/solutions/catalog.py:106
+msgid "Keyword cluster roadmap"
+msgstr ""
+
+#: apps/solutions/catalog.py:107
+msgid "Editorial calendar"
+msgstr ""
+
+#: apps/solutions/catalog.py:108
+msgid "Technical SEO audit"
+msgstr ""
+
+#: apps/solutions/catalog.py:109
+msgid "Link-building playbook"
+msgstr ""
+
+#: apps/solutions/catalog.py:112
+msgid "Keyword & competitor research"
+msgstr ""
+
+#: apps/solutions/catalog.py:113
+msgid "Topical authority map"
+msgstr ""
+
+#: apps/solutions/catalog.py:114
+msgid "Content production"
+msgstr ""
+
+#: apps/solutions/catalog.py:115
+msgid "Measure and refresh"
+msgstr ""
+
+#: apps/solutions/catalog.py:118
+msgid "New SaaS entering a market"
+msgstr ""
+
+#: apps/solutions/catalog.py:119
+msgid "Media brand expanding verticals"
+msgstr ""
+
+#: apps/solutions/catalog.py:120
+msgid "B2B lowering paid dependency"
+msgstr ""
+
+#: apps/solutions/catalog.py:123
+msgid ""
+"Northwind tripled organic signups in 9 months with a topical authority plan."
+msgstr ""
+
+#: apps/solutions/catalog.py:129
+msgid "Email marketing strategy"
+msgstr ""
+
+#: apps/solutions/catalog.py:130
+msgid "Convert, retain and reactivate with lifecycle email."
+msgstr ""
+
+#: apps/solutions/catalog.py:132
+msgid ""
+"Lifecycle email programs across onboarding, promotion, retention and win-"
+"back, with segmentation and deliverability at the core."
+msgstr ""
+
+#: apps/solutions/catalog.py:136
+msgid "Lifecycle program design"
+msgstr ""
+
+#: apps/solutions/catalog.py:137
+msgid "Segmentation strategy"
+msgstr ""
+
+#: apps/solutions/catalog.py:138
+msgid "Template system"
+msgstr ""
+
+#: apps/solutions/catalog.py:139
+msgid "A/B testing roadmap"
+msgstr ""
+
+#: apps/solutions/catalog.py:142
+msgid "Audit CRM & list health"
+msgstr ""
+
+#: apps/solutions/catalog.py:143
+msgid "Map lifecycle stages"
+msgstr ""
+
+#: apps/solutions/catalog.py:144
+msgid "Design flows and creative"
+msgstr ""
+
+#: apps/solutions/catalog.py:145
+msgid "Launch and optimize"
+msgstr ""
+
+#: apps/solutions/catalog.py:148
+msgid "E-commerce retention"
+msgstr ""
+
+#: apps/solutions/catalog.py:149
+msgid "SaaS onboarding"
+msgstr ""
+
+#: apps/solutions/catalog.py:150
+msgid "Event and webinar nurture"
+msgstr ""
+
+#: apps/solutions/catalog.py:152
+#, python-format
+msgid "Lumen Co. recovered 18% of abandoned carts with a 3-step flow."
+msgstr ""
+
+#: apps/solutions/catalog.py:157
+msgid "Campaign analytics & optimization"
+msgstr ""
+
+#: apps/solutions/catalog.py:158
+msgid "Measure what matters and improve every month."
+msgstr ""
+
+#: apps/solutions/catalog.py:160
+msgid ""
+"Set up reliable measurement, build an executive dashboard, and run a "
+"disciplined experiment cadence."
+msgstr ""
+
+#: apps/solutions/catalog.py:164
+msgid "Unified KPI dashboard"
+msgstr ""
+
+#: apps/solutions/catalog.py:165
+msgid "Experiment backlog"
+msgstr ""
+
+#: apps/solutions/catalog.py:166
+msgid "Attribution framework"
+msgstr ""
+
+#: apps/solutions/catalog.py:167
+msgid "Monthly growth review"
+msgstr ""
+
+#: apps/solutions/catalog.py:170
+msgid "KPI & measurement design"
+msgstr ""
+
+#: apps/solutions/catalog.py:171
+msgid "Dashboard & data pipelines"
+msgstr ""
+
+#: apps/solutions/catalog.py:172
+msgid "Experiment planning"
+msgstr ""
+
+#: apps/solutions/catalog.py:173
+msgid "Iterate and scale wins"
+msgstr ""
+
+#: apps/solutions/catalog.py:176
+msgid "Mature brands seeking incremental wins"
+msgstr ""
+
+#: apps/solutions/catalog.py:177
+msgid "Agencies needing reporting rigor"
+msgstr ""
+
+#: apps/solutions/catalog.py:178
+msgid "Growth teams scaling cross-channel"
+msgstr ""
+
+#: apps/solutions/catalog.py:180
+msgid "Orbit Mobility shipped 24 experiments in a quarter; 9 were winners."
+msgstr ""
+
+#: apps/solutions/forms.py:22
+msgid "Brand awareness"
+msgstr ""
+
+#: apps/solutions/forms.py:23
+msgid "Lead generation"
+msgstr ""
+
+#: apps/solutions/forms.py:24
+msgid "Sales & conversions"
+msgstr ""
+
+#: apps/solutions/forms.py:25
+msgid "Retention & loyalty"
+msgstr ""
+
+#: apps/solutions/forms.py:26
+msgid "Product launch"
+msgstr ""
+
+#: apps/solutions/forms.py:30
+msgid "Less than $5k/month"
+msgstr ""
+
+#: apps/solutions/forms.py:31
+msgid "$5k – $25k/month"
+msgstr ""
+
+#: apps/solutions/forms.py:32
+msgid "$25k – $100k/month"
+msgstr ""
+
+#: apps/solutions/forms.py:33
+msgid "$100k+/month"
+msgstr ""
+
+#: apps/solutions/forms.py:37
+msgid "4 weeks"
+msgstr ""
+
+#: apps/solutions/forms.py:38
+msgid "3 months"
+msgstr ""
+
+#: apps/solutions/forms.py:39
+msgid "6 months"
+msgstr ""
+
+#: apps/solutions/forms.py:40
+msgid "12 months"
+msgstr ""
+
+#: apps/solutions/forms.py:45
+msgid "Primary objective"
+msgstr ""
+
+#: apps/solutions/forms.py:48 templates/solutions/plan_detail.html:35
+#: templates/solutions/wizard.html:41
+msgid "Target audience"
+msgstr "الجمهور المستهدف"
+
+#: apps/solutions/forms.py:49
+msgid "Demographics, interests, pains, channels they use."
+msgstr ""
+
+#: apps/solutions/forms.py:51
+msgid "Budget range"
+msgstr ""
+
+#: apps/solutions/forms.py:52
+msgid "Campaign duration"
+msgstr ""
+
+#: apps/solutions/forms.py:55 templates/solutions/wizard.html:46
+msgid "Current challenges"
+msgstr ""
+
+#: apps/solutions/models.py:39
+msgid "Draft"
+msgstr ""
+
+#: apps/solutions/models.py:40
+msgid "Planning"
+msgstr ""
+
+#: apps/solutions/models.py:42
+msgid "Completed"
+msgstr ""
+
+#: apps/solutions/views.py:141
+msgid "Please complete the previous steps first."
+msgstr ""
+
+#: apps/solutions/views.py:176
+msgid "Your strategy plan has been saved."
+msgstr "تم حفظ خطتك الاستراتيجية."
+
+#: config/settings.py:133
+msgid "English"
+msgstr "الإنجليزية"
+
+#: config/settings.py:134
+msgid "French"
+msgstr "الفرنسية"
+
+#: config/settings.py:135
+msgid "Arabic"
+msgstr "العربية"
+
+#: templates/account/_social.html:2
+msgid "or continue with"
+msgstr "أو تابع مع"
+
+#: templates/account/_social.html:11 templates/account/_social.html:12
+#: templates/account/_social.html:13
+msgid "Configure in admin → Social applications"
+msgstr ""
+
+#: templates/account/login.html:3 templates/account/login.html:23
+#: templates/account/signup.html:41 templates/base.html:65
+#: templates/base.html:112
+msgid "Sign in"
+msgstr "تسجيل الدخول"
+
+#: templates/account/login.html:7
+msgid "Welcome back"
+msgstr "مرحباً بعودتك"
+
+#: templates/account/login.html:8
+msgid "Sign in to continue planning winning campaigns."
+msgstr ""
+
+#: templates/account/login.html:13
+#: templates/account/password_reset_confirm.html:12
+#: templates/account/password_reset_request.html:12
+#: templates/account/profile.html:16 templates/account/signup.html:22
+#: templates/core/contact.html:20
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: templates/account/login.html:21
+msgid "Forgot password?"
+msgstr "نسيت كلمة المرور؟"
+
+#: templates/account/login.html:26
+msgid "New to Marketly?"
+msgstr ""
+
+#: templates/account/login.html:26
+msgid "Create an account"
+msgstr ""
+
+#: templates/account/password_reset_confirm.html:3
+#: templates/account/password_reset_confirm.html:31
+msgid "Reset password"
+msgstr ""
+
+#: templates/account/password_reset_confirm.html:7
+msgid "Set a new password"
+msgstr ""
+
+#: templates/account/password_reset_confirm.html:8
+msgid "Enter the code we sent you and choose a new password."
+msgstr ""
+
+#: templates/account/password_reset_confirm.html:16
+#: templates/account/verify_email.html:18
+msgid "Verification code"
+msgstr ""
+
+#: templates/account/password_reset_confirm.html:26
+msgid "Confirm"
+msgstr ""
+
+#: templates/account/password_reset_request.html:3
+msgid "Forgot password"
+msgstr ""
+
+#: templates/account/password_reset_request.html:7
+msgid "Forgot your password?"
+msgstr ""
+
+#: templates/account/password_reset_request.html:8
+msgid "We'll email you a 6-digit reset code."
+msgstr ""
+
+#: templates/account/password_reset_request.html:15
+msgid "Send reset code"
+msgstr ""
+
+#: templates/account/password_reset_request.html:17
+msgid "Back to sign in"
+msgstr ""
+
+#: templates/account/profile.html:3 templates/dashboard/home.html:20
+msgid "Your profile"
+msgstr ""
+
+#: templates/account/profile.html:6
+msgid "Profile & preferences"
+msgstr ""
+
+#: templates/account/profile.html:7
+msgid "Update your personal, company and preference settings."
+msgstr ""
+
+#: templates/account/profile.html:11
+msgid "Personal info"
+msgstr ""
+
+#: templates/account/profile.html:13 templates/account/signup.html:13
+msgid "First name"
+msgstr "الاسم الأول"
+
+#: templates/account/profile.html:14 templates/account/signup.html:17
+msgid "Last name"
+msgstr "اسم العائلة"
+
+#: templates/account/profile.html:17
+msgid "Phone"
+msgstr ""
+
+#: templates/account/profile.html:18
+msgid "Bio"
+msgstr ""
+
+#: templates/account/profile.html:19
+msgid "Avatar"
+msgstr ""
+
+#: templates/account/profile.html:22 templates/base.html:101
+msgid "Company"
+msgstr "الشركة"
+
+#: templates/account/profile.html:23 templates/solutions/wizard.html:22
+msgid "Company name"
+msgstr ""
+
+#: templates/account/profile.html:25 templates/solutions/wizard.html:24
+msgid "Industry"
+msgstr "القطاع"
+
+#: templates/account/profile.html:26
+msgid "Size"
+msgstr ""
+
+#: templates/account/profile.html:28 templates/solutions/wizard.html:27
+msgid "Website"
+msgstr "الموقع"
+
+#: templates/account/profile.html:29
+msgid "Country"
+msgstr ""
+
+#: templates/account/profile.html:30
+msgid "Description"
+msgstr ""
+
+#: templates/account/profile.html:33
+msgid "Preferences"
+msgstr ""
+
+#: templates/account/profile.html:35 templates/dashboard/home.html:22
+msgid "Language"
+msgstr ""
+
+#: templates/account/profile.html:36 templates/dashboard/home.html:23
+msgid "Theme"
+msgstr ""
+
+#: templates/account/profile.html:38
+msgid "Send me marketing tips and product updates"
+msgstr ""
+
+#: templates/account/profile.html:42
+msgid "Security"
+msgstr ""
+
+#: templates/account/profile.html:43
+msgid "Need to change your password?"
+msgstr ""
+
+#: templates/account/profile.html:45
+msgid "Reset via email code"
+msgstr ""
+
+#: templates/account/profile.html:48
+msgid "Save changes"
+msgstr ""
+
+#: templates/account/signup.html:3 templates/account/signup.html:7
+msgid "Create your account"
+msgstr "أنشئ حسابك"
+
+#: templates/account/signup.html:8
+msgid "Free to get started — no credit card required."
+msgstr ""
+
+#: templates/account/signup.html:38
+msgid "Create account"
+msgstr ""
+
+#: templates/account/signup.html:41
+msgid "Already have an account?"
+msgstr ""
+
+#: templates/account/verify_email.html:3 templates/account/verify_email.html:7
+#: templates/emails/verification_code.html:5
+msgid "Verify your email"
+msgstr ""
+
+#: templates/account/verify_email.html:10
+#, python-format
+msgid ""
+"We sent a 6-digit code to <strong>%(email)s</strong>. Enter it below to "
+"activate your account."
+msgstr ""
+
+#: templates/account/verify_email.html:12
+msgid "Enter the 6-digit code we emailed you."
+msgstr ""
+
+#: templates/account/verify_email.html:22
+msgid "Verify email"
+msgstr "التحقق من البريد"
+
+#: templates/account/verify_email.html:24
+msgid "Resend code"
+msgstr ""
+
+#: templates/base.html:7 templates/core/home.html:3
+msgid "Marketing strategies that grow brands"
+msgstr ""
+
+#: templates/base.html:8
+msgid "Plan, launch and scale premium marketing strategies with Marketly."
+msgstr ""
+
+#: templates/base.html:16
+msgid "Skip to content"
+msgstr ""
+
+#: templates/base.html:25
+msgid "Open menu"
+msgstr ""
+
+#: templates/base.html:29
+msgid "Main navigation"
+msgstr ""
+
+#: templates/base.html:30 templates/base.html:95 templates/core/home.html:56
+#: templates/solutions/list.html:3 templates/solutions/list.html:8
+msgid "Solutions"
+msgstr "الحلول"
+
+#: templates/base.html:31 templates/base.html:96
+#: templates/billing/pricing.html:3 templates/billing/pricing.html:9
+msgid "Pricing"
+msgstr "الأسعار"
+
+#: templates/base.html:32 templates/base.html:97 templates/chatbot/home.html:3
+msgid "AI chatbot"
+msgstr "روبوت المحادثة"
+
+#: templates/base.html:33 templates/base.html:98
+#: templates/dashboard/home.html:79 templates/recommendations/home.html:3
+#: templates/recommendations/home.html:8
+msgid "Recommendations"
+msgstr "التوصيات"
+
+#: templates/base.html:34 templates/base.html:102 templates/core/contact.html:3
+#: templates/core/contact.html:9
+msgid "Contact"
+msgstr "تواصل"
+
+#: templates/base.html:54
+msgid "Toggle dark mode"
+msgstr ""
+
+#: templates/base.html:60 templates/base.html:109
+#: templates/dashboard/home.html:3
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: templates/base.html:62
+msgid "Sign out"
+msgstr "تسجيل الخروج"
+
+#: templates/base.html:66
+msgid "Get started"
+msgstr "ابدأ الآن"
+
+#: templates/base.html:91
+msgid "Marketing strategies that grow brands across every channel."
+msgstr ""
+
+#: templates/base.html:94
+msgid "Product"
+msgstr ""
+
+#: templates/base.html:103
+msgid "About"
+msgstr ""
+
+#: templates/base.html:104
+msgid "Careers"
+msgstr ""
+
+#: templates/base.html:107
+msgid "Account"
+msgstr ""
+
+#: templates/base.html:110
+msgid "Profile"
+msgstr "الملف الشخصي"
+
+#: templates/base.html:113
+msgid "Sign up"
+msgstr "إنشاء حساب"
+
+#: templates/base.html:118
+msgid "All rights reserved."
+msgstr ""
+
+#: templates/billing/cancel.html:3 templates/billing/cancel.html:7
+msgid "Payment canceled"
+msgstr ""
+
+#: templates/billing/cancel.html:8
+msgid "No worries — you can try again any time."
+msgstr ""
+
+#: templates/billing/cancel.html:10 templates/billing/checkout.html:23
+msgid "Back to pricing"
+msgstr ""
+
+#: templates/billing/cancel.html:11 templates/billing/success.html:11
+msgid "Go to dashboard"
+msgstr ""
+
+#: templates/billing/checkout.html:3 templates/billing/checkout.html:7
+msgid "Checkout"
+msgstr ""
+
+#: templates/billing/checkout.html:8
+msgid "You are about to subscribe to the following plan:"
+msgstr ""
+
+#: templates/billing/checkout.html:15
+msgid ""
+"Stripe is not configured in this environment — clicking 'Pay' will simulate "
+"a successful test payment for development."
+msgstr ""
+
+#: templates/billing/checkout.html:20
+msgid "Activate free plan"
+msgstr ""
+
+#: templates/billing/checkout.html:20
+msgid "Proceed to payment"
+msgstr ""
+
+#: templates/billing/pricing.html:10
+msgid "Plans that scale with your marketing"
+msgstr ""
+
+#: templates/billing/pricing.html:11
+msgid "Start free. Upgrade any time. Cancel whenever."
+msgstr ""
+
+#: templates/billing/pricing.html:16
+msgid "Most popular"
+msgstr ""
+
+#: templates/billing/pricing.html:24
+msgid "Start for free"
+msgstr ""
+
+#: templates/billing/pricing.html:24
+msgid "Choose plan"
+msgstr ""
+
+#: templates/billing/pricing.html:27
+msgid "Plans will appear here once seeded. Run: python manage.py seed_demo"
+msgstr ""
+
+#: templates/billing/success.html:3
+msgid "Payment successful"
+msgstr ""
+
+#: templates/billing/success.html:8
+msgid "You're all set!"
+msgstr ""
+
+#: templates/billing/success.html:9
+msgid "Thanks for upgrading. Premium features are now unlocked."
+msgstr ""
+
+#: templates/billing/success.html:10
+#: templates/emails/payment_confirmation.html:10
+#: templates/emails/payment_confirmation.txt:5
+msgid "Reference"
+msgstr ""
+
+#: templates/chatbot/home.html:9
+msgid "Conversations"
+msgstr ""
+
+#: templates/chatbot/home.html:10
+msgid "New"
+msgstr ""
+
+#: templates/chatbot/home.html:15
+msgid "Start a new chat to begin."
+msgstr ""
+
+#: templates/chatbot/home.html:22
+msgid "New conversation"
+msgstr ""
+
+#: templates/chatbot/home.html:23
+msgid "AI marketing assistant"
+msgstr ""
+
+#: templates/chatbot/home.html:25
+msgid "Mock provider — wire a real LLM later"
+msgstr ""
+
+#: templates/chatbot/home.html:33
+msgid ""
+"Hi! I'm your marketing assistant. Ask me about strategy, channels, budgets, "
+"creative ideas, or KPIs."
+msgstr ""
+
+#: templates/chatbot/home.html:42
+msgid "Ask anything about marketing…"
+msgstr ""
+
+#: templates/chatbot/home.html:43
+msgid "Send"
+msgstr ""
+
+#: templates/core/contact.html:10
+msgid "Let's talk marketing"
+msgstr ""
+
+#: templates/core/contact.html:11
+msgid ""
+"Tell us about your brand and goals — we'll get back to you within one "
+"business day."
+msgstr ""
+
+#: templates/core/contact.html:16
+msgid "Your name"
+msgstr ""
+
+#: templates/core/contact.html:24
+msgid "How can we help?"
+msgstr ""
+
+#: templates/core/contact.html:27
+msgid "Send message"
+msgstr ""
+
+#: templates/core/home.html:10
+msgid "AI-powered marketing planning"
+msgstr ""
+
+#: templates/core/home.html:11
+msgid "Marketing strategies that"
+msgstr ""
+
+#: templates/core/home.html:11
+msgid "grow brands."
+msgstr ""
+
+#: templates/core/home.html:12
+msgid ""
+"Plan, launch and scale premium campaigns across every channel — with AI "
+"assistance, ready-to-use playbooks, and a team-friendly dashboard."
+msgstr ""
+
+#: templates/core/home.html:14 templates/core/home.html:107
+msgid "Explore solutions"
+msgstr ""
+
+#: templates/core/home.html:15
+msgid "See pricing"
+msgstr ""
+
+#: templates/core/home.html:19
+msgid "Trusted by growth teams worldwide"
+msgstr ""
+
+#: templates/core/home.html:23
+msgid "Your strategy, ready in minutes"
+msgstr ""
+
+#: templates/core/home.html:24
+msgid ""
+"Tell us about your company and goals. We'll generate a full marketing plan "
+"tailored to your industry, budget, and audience."
+msgstr ""
+
+#: templates/core/home.html:26
+msgid "ROAS uplift"
+msgstr ""
+
+#: templates/core/home.html:27
+msgid "Faster planning"
+msgstr ""
+
+#: templates/core/home.html:28
+msgid "Experiments/quarter"
+msgstr ""
+
+#: templates/core/home.html:38
+msgid "Why Marketly"
+msgstr ""
+
+#: templates/core/home.html:39
+msgid "Everything you need to plan world-class campaigns"
+msgstr ""
+
+#: templates/core/home.html:40
+msgid ""
+"From briefs to budgets, from copy to KPIs — a single workspace for growth "
+"teams and agencies."
+msgstr ""
+
+#: templates/core/home.html:43
+msgid "Goal-first planning"
+msgstr ""
+
+#: templates/core/home.html:43
+msgid ""
+"Every strategy starts with a measurable outcome — we keep you focused on "
+"what matters."
+msgstr ""
+
+#: templates/core/home.html:44
+msgid "AI-assisted drafts"
+msgstr ""
+
+#: templates/core/home.html:44
+msgid ""
+"Briefs, channel plans, and copy ideas generated in seconds and easy to "
+"refine."
+msgstr ""
+
+#: templates/core/home.html:45
+msgid "Benchmark-backed KPIs"
+msgstr ""
+
+#: templates/core/home.html:45
+msgid "Industry benchmarks and best-in-class KPI targets for every channel."
+msgstr ""
+
+#: templates/core/home.html:46
+msgid "Multi-channel mix"
+msgstr ""
+
+#: templates/core/home.html:46
+msgid "Paid, organic, lifecycle, PR — plan them together instead of in silos."
+msgstr ""
+
+#: templates/core/home.html:47
+msgid "Experiment cadence"
+msgstr ""
+
+#: templates/core/home.html:47
+msgid "Bake in a steady test-and-learn rhythm to compound growth every month."
+msgstr ""
+
+#: templates/core/home.html:48
+msgid "Multilingual"
+msgstr ""
+
+#: templates/core/home.html:48
+msgid "Work in English, French or Arabic — with RTL layout support."
+msgstr ""
+
+#: templates/core/home.html:57
+msgid "Six marketing solutions, ready to deploy"
+msgstr ""
+
+#: templates/core/home.html:58
+msgid "Hand-crafted playbooks you can personalize and save in one click."
+msgstr ""
+
+#: templates/core/home.html:86
+msgid "Testimonials"
+msgstr ""
+
+#: templates/core/home.html:87
+msgid "Loved by growth teams"
+msgstr ""
+
+#: templates/core/home.html:103
+msgid "Ready to plan your next winning campaign?"
+msgstr ""
+
+#: templates/core/home.html:104
+msgid "Start free — no credit card required."
+msgstr ""
+
+#: templates/core/home.html:106
+msgid "Create a free account"
+msgstr ""
+
+#: templates/dashboard/home.html:9
+msgid "Hello"
+msgstr ""
+
+#: templates/dashboard/home.html:10
+msgid "Here's a snapshot of your marketing work."
+msgstr ""
+
+#: templates/dashboard/home.html:13
+msgid "New strategy"
+msgstr ""
+
+#: templates/dashboard/home.html:14
+msgid "Open AI chatbot"
+msgstr ""
+
+#: templates/dashboard/home.html:24
+msgid "Edit profile"
+msgstr ""
+
+#: templates/dashboard/home.html:27
+msgid "Subscription"
+msgstr ""
+
+#: templates/dashboard/home.html:30 templates/dashboard/home.html:90
+msgid "Status"
+msgstr ""
+
+#: templates/dashboard/home.html:32
+msgid "You're on the free plan."
+msgstr ""
+
+#: templates/dashboard/home.html:34
+msgid "Manage plan"
+msgstr ""
+
+#: templates/dashboard/home.html:37
+msgid "Quick actions"
+msgstr ""
+
+#: templates/dashboard/home.html:39 templates/errors/404.html:12
+#: templates/recommendations/home.html:30
+msgid "Browse solutions"
+msgstr ""
+
+#: templates/dashboard/home.html:40
+msgid "View recommendations"
+msgstr ""
+
+#: templates/dashboard/home.html:41
+msgid "Ask the AI chatbot"
+msgstr ""
+
+#: templates/dashboard/home.html:46
+msgid "Saved strategies"
+msgstr ""
+
+#: templates/dashboard/home.html:54
+msgid "No saved strategies yet. Start from a solution."
+msgstr ""
+
+#: templates/dashboard/home.html:58
+msgid "Recent chats"
+msgstr ""
+
+#: templates/dashboard/home.html:66
+msgid "No conversations yet."
+msgstr ""
+
+#: templates/dashboard/home.html:71
+msgid "Campaign projects"
+msgstr ""
+
+#: templates/dashboard/home.html:76
+msgid "No projects yet."
+msgstr ""
+
+#: templates/dashboard/home.html:84
+msgid "Generate a plan to see recommendations."
+msgstr ""
+
+#: templates/dashboard/home.html:88
+msgid "Payment history"
+msgstr ""
+
+#: templates/dashboard/home.html:90
+msgid "Date"
+msgstr ""
+
+#: templates/dashboard/home.html:90
+#: templates/emails/payment_confirmation.html:8
+#: templates/emails/payment_confirmation.txt:3
+msgid "Plan"
+msgstr ""
+
+#: templates/dashboard/home.html:90
+#: templates/emails/payment_confirmation.html:9
+#: templates/emails/payment_confirmation.txt:4
+msgid "Amount"
+msgstr ""
+
+#: templates/dashboard/home.html:102
+msgid "No transactions yet."
+msgstr ""
+
+#: templates/emails/_layout.html:13
+msgid "Marketing strategies that grow brands."
+msgstr ""
+
+#: templates/emails/payment_confirmation.html:5
+msgid "Thanks for your payment"
+msgstr ""
+
+#: templates/emails/payment_confirmation.html:6
+msgid "Your subscription is active and premium features are unlocked."
+msgstr ""
+
+#: templates/emails/payment_confirmation.html:12
+msgid "Back to dashboard"
+msgstr ""
+
+#: templates/emails/payment_confirmation.txt:1
+msgid "Payment confirmed."
+msgstr ""
+
+#: templates/emails/reset_code.html:5
+msgid "Reset your password"
+msgstr ""
+
+#: templates/emails/reset_code.html:6
+msgid "Use this 6-digit code to set a new password."
+msgstr ""
+
+#: templates/emails/reset_code.html:8 templates/emails/reset_code.txt:3
+#: templates/emails/verification_code.txt:3
+#, python-format
+msgid "This code expires in %(ttl_minutes)s minutes."
+msgstr ""
+
+#: templates/emails/reset_code.txt:1
+msgid "Your Marketly password reset code:"
+msgstr ""
+
+#: templates/emails/verification_code.html:6
+msgid "Enter this 6-digit code to activate your account."
+msgstr ""
+
+#: templates/emails/verification_code.html:8
+#, python-format
+msgid ""
+"This code expires in %(ttl_minutes)s minutes. If you didn't request it, you "
+"can safely ignore this email."
+msgstr ""
+
+#: templates/emails/verification_code.txt:1
+msgid "Your Marketly verification code:"
+msgstr ""
+
+#: templates/emails/welcome.html:6
+#, python-format
+msgid ""
+"Hi %(name)s, welcome aboard. Here's how to get the most out of Marketly:"
+msgstr ""
+
+#: templates/emails/welcome.html:8
+msgid "Browse solutions and start your first personalized plan."
+msgstr ""
+
+#: templates/emails/welcome.html:9
+msgid "Use the AI chatbot for ideas, briefs and copy."
+msgstr ""
+
+#: templates/emails/welcome.html:10
+msgid "Upgrade to unlock premium features and longer plans."
+msgstr ""
+
+#: templates/emails/welcome.html:12
+msgid "Open Marketly"
+msgstr ""
+
+#: templates/emails/welcome.txt:1
+#, python-format
+msgid "Hi %(name)s, welcome to Marketly!"
+msgstr ""
+
+#: templates/emails/welcome.txt:3
+msgid "Visit"
+msgstr ""
+
+#: templates/errors/404.html:3
+msgid "Page not found"
+msgstr ""
+
+#: templates/errors/404.html:8
+msgid "We can't find that page."
+msgstr ""
+
+#: templates/errors/404.html:9
+msgid "It may have moved or never existed. Let's get you back on track."
+msgstr ""
+
+#: templates/errors/404.html:11
+msgid "Back to home"
+msgstr ""
+
+#: templates/recommendations/home.html:9
+msgid "Personalized suggestions"
+msgstr ""
+
+#: templates/recommendations/home.html:10
+msgid ""
+"Filtered by the work you've done so far. Generate a plan from any solution "
+"to grow this list."
+msgstr ""
+
+#: templates/recommendations/home.html:14
+msgid "All"
+msgstr ""
+
+#: templates/recommendations/home.html:29
+msgid "No recommendations yet."
+msgstr ""
+
+#: templates/solutions/detail.html:7
+msgid "Solution"
+msgstr ""
+
+#: templates/solutions/detail.html:17 templates/solutions/list.html:37
+msgid "Overview"
+msgstr ""
+
+#: templates/solutions/detail.html:21 templates/solutions/list.html:41
+msgid "Key benefits"
+msgstr ""
+
+#: templates/solutions/detail.html:25 templates/solutions/list.html:45
+msgid "How we work"
+msgstr ""
+
+#: templates/solutions/detail.html:29 templates/solutions/list.html:49
+msgid "Use cases"
+msgstr ""
+
+#: templates/solutions/detail.html:33 templates/solutions/list.html:53
+msgid "Mini case study"
+msgstr ""
+
+#: templates/solutions/detail.html:39 templates/solutions/list.html:57
+msgid "Start with this solution"
+msgstr "ابدأ بهذا الحل"
+
+#: templates/solutions/detail.html:40
+msgid "We'll generate a personalized marketing plan in 3 quick steps."
+msgstr ""
+
+#: templates/solutions/detail.html:41
+msgid "Start now"
+msgstr ""
+
+#: templates/solutions/detail.html:42
+msgid "Free preview — premium features unlock after upgrade."
+msgstr ""
+
+#: templates/solutions/list.html:9
+msgid "Ready-to-launch marketing playbooks"
+msgstr ""
+
+#: templates/solutions/list.html:10
+msgid ""
+"Open any solution for the full breakdown and kick off your personalized plan "
+"in 3 steps."
+msgstr ""
+
+#: templates/solutions/list.html:21
+msgid "Open details"
+msgstr ""
+
+#: templates/solutions/list.html:32
+msgid "Close"
+msgstr ""
+
+#: templates/solutions/list.html:58
+msgid "Open full page"
+msgstr ""
+
+#: templates/solutions/plan_detail.html:13
+msgid "Executive summary"
+msgstr "الملخص التنفيذي"
+
+#: templates/solutions/plan_detail.html:17
+msgid "Value proposition"
+msgstr "عرض القيمة"
+
+#: templates/solutions/plan_detail.html:22
+msgid "Strengths"
+msgstr ""
+
+#: templates/solutions/plan_detail.html:26
+msgid "Opportunities"
+msgstr ""
+
+#: templates/solutions/plan_detail.html:30
+msgid "Risks"
+msgstr ""
+
+#: templates/solutions/plan_detail.html:39 templates/solutions/wizard.html:69
+msgid "Recommended channels"
+msgstr "القنوات الموصى بها"
+
+#: templates/solutions/plan_detail.html:44 templates/solutions/wizard.html:65
+msgid "Marketing objectives"
+msgstr "أهداف التسويق"
+
+#: templates/solutions/plan_detail.html:48 templates/solutions/wizard.html:82
+msgid "KPIs"
+msgstr "مؤشرات الأداء"
+
+#: templates/solutions/plan_detail.html:53 templates/solutions/wizard.html:88
+msgid "Campaign timeline"
+msgstr "الجدول الزمني للحملة"
+
+#: templates/solutions/plan_detail.html:58 templates/solutions/wizard.html:73
+msgid "Budget estimate"
+msgstr "تقدير الميزانية"
+
+#: templates/solutions/plan_detail.html:65
+msgid "Optimization"
+msgstr ""
+
+#: templates/solutions/plan_detail.html:70
+msgid "Next steps"
+msgstr "الخطوات التالية"
+
+#: templates/solutions/plan_detail.html:73
+msgid "Unlock premium features"
+msgstr ""
+
+#: templates/solutions/plan_detail.html:74
+msgid "Refine with AI chat"
+msgstr ""
+
+#: templates/solutions/wizard.html:3
+msgid "Configure strategy"
+msgstr ""
+
+#: templates/solutions/wizard.html:7
+msgid "Steps"
+msgstr ""
+
+#: templates/solutions/wizard.html:17
+msgid "Step 1 — Company information"
+msgstr ""
+
+#: templates/solutions/wizard.html:18
+msgid "Tell us about your company so we can tailor the plan."
+msgstr ""
+
+#: templates/solutions/wizard.html:25
+msgid "Company size"
+msgstr ""
+
+#: templates/solutions/wizard.html:29
+msgid "Cancel"
+msgstr ""
+
+#: templates/solutions/wizard.html:30
+msgid "Continue"
+msgstr ""
+
+#: templates/solutions/wizard.html:35
+msgid "Step 2 — Campaign details"
+msgstr ""
+
+#: templates/solutions/wizard.html:36
+msgid "Define your goals, audience and budget."
+msgstr ""
+
+#: templates/solutions/wizard.html:40
+msgid "Objective"
+msgstr ""
+
+#: templates/solutions/wizard.html:43
+msgid "Budget"
+msgstr "الميزانية"
+
+#: templates/solutions/wizard.html:44
+msgid "Duration"
+msgstr "المدة"
+
+#: templates/solutions/wizard.html:48 templates/solutions/wizard.html:99
+msgid "Back"
+msgstr "رجوع"
+
+#: templates/solutions/wizard.html:49
+msgid "Generate plan"
+msgstr ""
+
+#: templates/solutions/wizard.html:54
+msgid "Step 3 — Your personalized plan"
+msgstr ""
+
+#: templates/solutions/wizard.html:55
+msgid "Review the generated plan and save it to your dashboard."
+msgstr ""
+
+#: templates/solutions/wizard.html:101
+msgid "Save plan to my dashboard"
+msgstr ""
+
+#: templates/solutions/wizard.html:106
+msgid "Please complete the previous steps to generate your plan."
+msgstr ""
+
+#: templates/solutions/wizard.html:107
+msgid "Start over"
+msgstr ""

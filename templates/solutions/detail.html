@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{{ solution.title }} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<section class="solution-hero">
+  <div class="container">
+    <span class="chip">{{ solution.icon }} {% trans "Solution" %}</span>
+    <h1>{{ solution.title }}</h1>
+    <p class="lead text-muted" style="max-width:70ch;">{{ solution.tagline }}</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="container solution-layout">
+    <div>
+      <div class="solution-section">
+        <h3>{% trans "Overview" %}</h3>
+        <p class="text-muted">{{ solution.overview }}</p>
+      </div>
+      <div class="solution-section">
+        <h3>{% trans "Key benefits" %}</h3>
+        <div class="pill-list">{% for b in solution.benefits %}<span class="pill">{{ b }}</span>{% endfor %}</div>
+      </div>
+      <div class="solution-section">
+        <h3>{% trans "How we work" %}</h3>
+        <ol class="process-steps">{% for p in solution.process %}<li>{{ p }}</li>{% endfor %}</ol>
+      </div>
+      <div class="solution-section">
+        <h3>{% trans "Use cases" %}</h3>
+        <ul style="padding-inline-start:20px; color:var(--text-muted);">{% for u in solution.use_cases %}<li>{{ u }}</li>{% endfor %}</ul>
+      </div>
+      <div class="solution-section">
+        <h3>{% trans "Mini case study" %}</h3>
+        <p class="text-muted"><em>{{ solution.case_study }}</em></p>
+      </div>
+    </div>
+    <aside>
+      <div class="side-cta">
+        <h4>{% trans "Start with this solution" %}</h4>
+        <p class="text-muted">{% trans "We'll generate a personalized marketing plan in 3 quick steps." %}</p>
+        <a class="btn-cta" style="width:100%; margin-top:8px;" href="{{ start_url }}">{% trans "Start now" %}</a>
+        <p class="text-muted mt-2" style="font-size:13px;">{% trans "Free preview — premium features unlock after upgrade." %}</p>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

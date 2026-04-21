@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Your profile" %} — {{ BRAND_NAME }}{% endblock %}
+{% block content %}
+<section class="dashboard-wrap">
+  <h1>{% trans "Profile & preferences" %}</h1>
+  <p class="text-muted">{% trans "Update your personal, company and preference settings." %}</p>
+  <form method="post" enctype="multipart/form-data" class="dash-grid" style="margin-top:20px;">
+    {% csrf_token %}
+    <div class="dash-card span-6">
+      <h3>{% trans "Personal info" %}</h3>
+      <div class="field-row">
+        <div class="field"><label>{% trans "First name" %}</label>{{ profile_form.first_name }}</div>
+        <div class="field"><label>{% trans "Last name" %}</label>{{ profile_form.last_name }}</div>
+      </div>
+      <div class="field"><label>{% trans "Email" %}</label><input type="email" value="{{ request.user.email }}" disabled /></div>
+      <div class="field"><label>{% trans "Phone" %}</label>{{ profile_form.phone }}</div>
+      <div class="field"><label>{% trans "Bio" %}</label>{{ profile_form.bio }}</div>
+      <div class="field"><label>{% trans "Avatar" %}</label>{{ profile_form.avatar }}</div>
+    </div>
+    <div class="dash-card span-6">
+      <h3>{% trans "Company" %}</h3>
+      <div class="field"><label>{% trans "Company name" %}</label>{{ company_form.name }}</div>
+      <div class="field-row">
+        <div class="field"><label>{% trans "Industry" %}</label>{{ company_form.industry }}</div>
+        <div class="field"><label>{% trans "Size" %}</label>{{ company_form.size }}</div>
+      </div>
+      <div class="field"><label>{% trans "Website" %}</label>{{ company_form.website }}</div>
+      <div class="field"><label>{% trans "Country" %}</label>{{ company_form.country }}</div>
+      <div class="field"><label>{% trans "Description" %}</label>{{ company_form.description }}</div>
+    </div>
+    <div class="dash-card span-6">
+      <h3>{% trans "Preferences" %}</h3>
+      <div class="field-row">
+        <div class="field"><label>{% trans "Language" %}</label>{{ profile_form.preferred_language }}</div>
+        <div class="field"><label>{% trans "Theme" %}</label>{{ profile_form.preferred_theme }}</div>
+      </div>
+      <div class="field"><label><input type="checkbox" name="marketing_opt_in" {% if profile_form.instance.marketing_opt_in %}checked{% endif %}/> {% trans "Send me marketing tips and product updates" %}</label></div>
+    </div>
+    <div class="dash-card span-6" style="display:flex; align-items:center; justify-content:space-between;">
+      <div>
+        <h3>{% trans "Security" %}</h3>
+        <p class="text-muted">{% trans "Need to change your password?" %}</p>
+      </div>
+      <a class="btn-outline" href="{% url 'accounts:password_reset' %}">{% trans "Reset via email code" %}</a>
+    </div>
+    <div class="span-12" style="text-align:end;">
+      <button class="btn-cta" type="submit">{% trans "Save changes" %}</button>
+    </div>
+  </form>
+</section>
+{% endblock %}
