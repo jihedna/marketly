@@ -8,14 +8,19 @@
     <p class="lede">{% trans "Free to get started — no credit card required." %}</p>
     <form method="post">
       {% csrf_token %}
+      {% if form.non_field_errors %}
+        <div class="errors">{% for e in form.non_field_errors %}{{ e }}{% endfor %}</div>
+      {% endif %}
       <div class="field-row">
         <div class="field">
           <label for="id_first_name">{% trans "First name" %}</label>
           <input id="id_first_name" name="first_name" value="{{ form.first_name.value|default:'' }}" />
+          {% for e in form.first_name.errors %}<div class="errors">{{ e }}</div>{% endfor %}
         </div>
         <div class="field">
           <label for="id_last_name">{% trans "Last name" %}</label>
           <input id="id_last_name" name="last_name" value="{{ form.last_name.value|default:'' }}" />
+          {% for e in form.last_name.errors %}<div class="errors">{{ e }}</div>{% endfor %}
         </div>
       </div>
       <div class="field">

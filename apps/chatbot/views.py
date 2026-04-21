@@ -25,14 +25,14 @@ class ChatbotHomeView(View):
             conversation = get_object_or_404(ChatConversation, pk=conv_id, user=request.user)
         elif conversations.exists():
             conversation = conversations.first()
-        messages = conversation.messages.all() if conversation else []
+        chat_messages = conversation.messages.all() if conversation else []
         return render(
             request,
             self.template_name,
             {
                 "conversations": conversations,
                 "conversation": conversation,
-                "messages": messages,
+                "chat_messages": chat_messages,
                 "suggestions": SUGGESTED_PROMPTS,
             },
         )
