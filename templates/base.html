@@ -100,8 +100,8 @@
     <div>
       <h4>{% trans "Company" %}</h4>
       <a href="{% url 'core:contact' %}">{% trans "Contact" %}</a>
-      <a href="#">{% trans "About" %}</a>
-      <a href="#">{% trans "Careers" %}</a>
+      <a href="{% url 'core:home' %}#about">{% trans "About" %}</a>
+      <a href="{% url 'core:home' %}#solutions">{% trans "Our work" %}</a>
     </div>
     <div>
       <h4>{% trans "Account" %}</h4>
