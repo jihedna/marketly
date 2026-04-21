@@ -24,16 +24,16 @@ msgstr ""
 
 #: apps/accounts/emails.py:29 templates/emails/reset_code.html:3
 msgid "Your Marketly password reset code"
-msgstr ""
+msgstr "رمز إعادة تعيين كلمة المرور في Marketly"
 
 #: apps/accounts/emails.py:38 templates/emails/welcome.html:3
 #: templates/emails/welcome.html:5
 msgid "Welcome to Marketly!"
-msgstr ""
+msgstr "أهلاً بك في Marketly!"
 
 #: apps/accounts/emails.py:47 templates/emails/payment_confirmation.html:3
 msgid "Payment confirmed — thank you!"
-msgstr ""
+msgstr "تم تأكيد الدفع — شكراً لك!"
 
 #: apps/accounts/forms.py:19 templates/account/login.html:17
 #: templates/account/signup.html:28
@@ -46,7 +46,7 @@ msgstr "تأكيد كلمة المرور"
 
 #: apps/accounts/forms.py:25
 msgid "An account with this email already exists."
-msgstr ""
+msgstr "يوجد حساب مرتبط بهذا البريد الإلكتروني بالفعل."
 
 #: apps/accounts/forms.py:33 apps/accounts/forms.py:93
 msgid "Passwords do not match."
@@ -66,15 +66,15 @@ msgstr "تأكيد كلمة المرور الجديدة"
 
 #: apps/accounts/models.py:46
 msgid "email address"
-msgstr ""
+msgstr "البريد الإلكتروني"
 
 #: apps/accounts/models.py:55
 msgid "user"
-msgstr ""
+msgstr "مستخدم"
 
 #: apps/accounts/models.py:56
 msgid "users"
-msgstr ""
+msgstr "المستخدمون"
 
 #: apps/accounts/models.py:68
 msgid "Light"
@@ -86,54 +86,54 @@ msgstr "داكن"
 
 #: apps/accounts/models.py:86
 msgid "1-10 employees"
-msgstr ""
+msgstr "1-10 موظفين"
 
 #: apps/accounts/models.py:87
 msgid "11-50 employees"
-msgstr ""
+msgstr "11-50 موظفاً"
 
 #: apps/accounts/models.py:88
 msgid "51-200 employees"
-msgstr ""
+msgstr "51-200 موظف"
 
 #: apps/accounts/models.py:89
 msgid "201-1000 employees"
-msgstr ""
+msgstr "201-1000 موظف"
 
 #: apps/accounts/models.py:90
 msgid "1000+ employees"
-msgstr ""
+msgstr "أكثر من 1000 موظف"
 
 #: apps/accounts/models.py:144
 msgid "Email verification code"
-msgstr ""
+msgstr "رمز التحقق من البريد الإلكتروني"
 
 #: apps/accounts/models.py:145
 msgid "Email verification codes"
-msgstr ""
+msgstr "رموز التحقق من البريد الإلكتروني"
 
 #: apps/accounts/models.py:150
 msgid "Password reset code"
-msgstr ""
+msgstr "رمز إعادة تعيين كلمة المرور"
 
 #: apps/accounts/models.py:151
 msgid "Password reset codes"
-msgstr ""
+msgstr "رموز إعادة تعيين كلمة المرور"
 
 #: apps/accounts/views.py:43
 #, python-format
 msgid "Account created! We sent a 6-digit verification code to %(email)s."
-msgstr ""
+msgstr "تم إنشاء الحساب! أرسلنا رمز تحقق مكوناً من 6 أرقام إلى %(email)s."
 
 #: apps/accounts/views.py:66
 #, python-format
 msgid "Please verify your email to continue. A new code was sent to %(email)s."
-msgstr ""
+msgstr "يرجى التحقق من بريدك الإلكتروني للمتابعة. تم إرسال رمز جديد إلى %(email)s."
 
 #: apps/accounts/views.py:71
 #, python-format
 msgid "Welcome back, %(name)s!"
-msgstr ""
+msgstr "مرحباً بعودتك يا %(name)s!"
 
 #: apps/accounts/views.py:79
 msgid "You have been signed out."
@@ -141,11 +141,11 @@ msgstr "تم تسجيل خروجك."
 
 #: apps/accounts/views.py:104
 msgid "A new verification code has been sent."
-msgstr ""
+msgstr "تم إرسال رمز تحقق جديد."
 
 #: apps/accounts/views.py:110
 msgid "No pending verification found. Please sign up or log in again."
-msgstr ""
+msgstr "لا يوجد تحقق معلق. يرجى التسجيل أو تسجيل الدخول مرة أخرى."
 
 #: apps/accounts/views.py:121 apps/accounts/views.py:179
 msgid "Invalid or expired code."
@@ -153,20 +153,20 @@ msgstr "الرمز غير صالح أو منتهي الصلاحية."
 
 #: apps/accounts/views.py:129
 msgid "Email verified! Welcome to Marketly."
-msgstr ""
+msgstr "تم التحقق من البريد الإلكتروني! أهلاً بك في Marketly."
 
 #: apps/accounts/views.py:150
 #, python-format
 msgid "If an account exists for %(email)s, a reset code has been sent."
-msgstr ""
+msgstr "إذا كان هناك حساب مرتبط بـ %(email)s، فقد تم إرسال رمز إعادة التعيين."
 
 #: apps/accounts/views.py:171
 msgid "No account matches that email."
-msgstr ""
+msgstr "لا يوجد حساب يطابق هذا البريد الإلكتروني."
 
 #: apps/accounts/views.py:186
 msgid "Password updated. You are now signed in."
-msgstr ""
+msgstr "تم تحديث كلمة المرور. أنت الآن مسجَّل الدخول."
 
 #: apps/accounts/views.py:210
 msgid "Profile updated."
@@ -190,7 +190,7 @@ msgstr "غير نشط"
 
 #: apps/billing/models.py:40
 msgid "Trialing"
-msgstr ""
+msgstr "فترة تجريبية"
 
 #: apps/billing/models.py:41 apps/solutions/models.py:41
 msgid "Active"
@@ -198,11 +198,11 @@ msgstr "نشط"
 
 #: apps/billing/models.py:42
 msgid "Past due"
-msgstr ""
+msgstr "متأخر السداد"
 
 #: apps/billing/models.py:43
 msgid "Canceled"
-msgstr ""
+msgstr "ملغى"
 
 #: apps/billing/models.py:63
 msgid "Pending"
@@ -218,509 +218,509 @@ msgstr "فشل"
 
 #: apps/billing/models.py:66
 msgid "Refunded"
-msgstr ""
+msgstr "مُسترد"
 
 #: apps/billing/views.py:70
 msgid "Free plan activated."
-msgstr ""
+msgstr "تم تفعيل الخطة المجانية."
 
 #: apps/billing/views.py:77
 msgid "Stripe is not configured, simulating a successful test payment."
-msgstr ""
+msgstr "Stripe غير مُعدّ، جارٍ محاكاة عملية دفع تجريبية ناجحة."
 
 #: apps/core/views.py:25
 msgid "Average ROAS uplift"
-msgstr ""
+msgstr "متوسط تحسّن العائد على الإنفاق الإعلاني"
 
 #: apps/core/views.py:26
 msgid "Leads generated"
-msgstr ""
+msgstr "العملاء المحتملون المولّدون"
 
 #: apps/core/views.py:27 templates/core/home.html:29
 msgid "Client retention"
-msgstr ""
+msgstr "الاحتفاظ بالعملاء"
 
 #: apps/core/views.py:28
 msgid "Countries served"
-msgstr ""
+msgstr "الدول المخدومة"
 
 #: apps/core/views.py:33
 msgid ""
 "Marketly transformed how we approach campaign planning. We shipped our "
 "strongest quarter ever."
-msgstr ""
+msgstr "غيّرت Marketly طريقة تخطيطنا للحملات، وحققنا أقوى ربع سنوي على الإطلاق."
 
 #: apps/core/views.py:37
 msgid "Head of Growth, Nova Retail"
-msgstr ""
+msgstr "رئيس النمو، Nova Retail"
 
 #: apps/core/views.py:41
 msgid ""
 "The AI recommendations saved us weeks of research and helped us reallocate "
 "our ad spend with confidence."
-msgstr ""
+msgstr "وفّرت علينا توصيات الذكاء الاصطناعي أسابيع من البحث وساعدتنا على إعادة توزيع إنفاقنا الإعلاني بثقة."
 
 #: apps/core/views.py:45
 msgid "CMO, Helix Analytics"
-msgstr ""
+msgstr "المديرة التنفيذية للتسويق، Helix Analytics"
 
 #: apps/core/views.py:49
 msgid ""
 "From branding to paid ads, it's a single place where our team plans, "
 "executes, and reports."
-msgstr ""
+msgstr "من الهوية التجارية إلى الإعلانات المدفوعة، إنها مكان واحد يخطط فيه فريقنا وينفّذ ويُعدّ التقارير."
 
 #: apps/core/views.py:53
 msgid "Founder, Atlas Studio"
-msgstr ""
+msgstr "المؤسس، Atlas Studio"
 
 #: apps/core/views.py:70
 msgid "Please fill in all required fields."
-msgstr ""
+msgstr "يرجى ملء جميع الحقول المطلوبة."
 
 #: apps/core/views.py:73
 #, python-format
 msgid "New contact message from %(name)s"
-msgstr ""
+msgstr "رسالة تواصل جديدة من %(name)s"
 
 #: apps/core/views.py:79
 msgid "Thanks! We'll get back to you shortly."
-msgstr ""
+msgstr "شكراً! سنعود إليك قريباً."
 
 #: apps/solutions/catalog.py:10
 msgid "Social media strategy"
-msgstr ""
+msgstr "استراتيجية وسائل التواصل الاجتماعي"
 
 #: apps/solutions/catalog.py:11
 msgid "Grow audiences across every platform with intent."
-msgstr ""
+msgstr "نمِّ جمهورك عبر كل منصة بهدف واضح."
 
 #: apps/solutions/catalog.py:13
 msgid ""
 "A full-funnel social strategy that turns passive scrollers into loyal "
 "customers, with content pillars, influencer collaborations, and paid "
 "amplification."
-msgstr ""
+msgstr "استراتيجية اجتماعية متكاملة تحوّل المتصفحين السلبيين إلى عملاء أوفياء، مع محاور محتوى، وتعاونات مع المؤثرين، وتضخيم مدفوع."
 
 #: apps/solutions/catalog.py:18
 msgid "Clear content pillars and calendar"
-msgstr ""
+msgstr "محاور محتوى وتقويم واضحان"
 
 #: apps/solutions/catalog.py:19
 msgid "Platform-specific creative briefs"
-msgstr ""
+msgstr "ملخصات إبداعية خاصة بكل منصة"
 
 #: apps/solutions/catalog.py:20
 msgid "Influencer & UGC shortlists"
-msgstr ""
+msgstr "قوائم مختصرة للمؤثرين ومحتوى المستخدمين"
 
 #: apps/solutions/catalog.py:21
 msgid "Monthly performance reviews"
-msgstr ""
+msgstr "مراجعات أداء شهرية"
 
 #: apps/solutions/catalog.py:24
 msgid "Audit current channels and competitors"
-msgstr ""
+msgstr "تدقيق القنوات والمنافسين الحاليين"
 
 #: apps/solutions/catalog.py:25
 msgid "Define personas and content pillars"
-msgstr ""
+msgstr "تحديد الشخصيات ومحاور المحتوى"
 
 #: apps/solutions/catalog.py:26
 msgid "Produce creative and schedule"
-msgstr ""
+msgstr "إنتاج المحتوى الإبداعي وجدولته"
 
 #: apps/solutions/catalog.py:27
 msgid "Launch, measure, iterate"
-msgstr ""
+msgstr "إطلاق، قياس، تحسين"
 
 #: apps/solutions/catalog.py:30
 msgid "D2C brand launching a new product line"
-msgstr ""
+msgstr "علامة D2C تطلق خط منتجات جديداً"
 
 #: apps/solutions/catalog.py:31
 msgid "B2B SaaS building thought leadership"
-msgstr ""
+msgstr "شركة SaaS للأعمال تبني الريادة الفكرية"
 
 #: apps/solutions/catalog.py:32
 msgid "Local business driving footfall"
-msgstr ""
+msgstr "نشاط محلي يحفّز الإقبال"
 
 #: apps/solutions/catalog.py:35
 #, python-format
 msgid ""
 "Nova Retail grew Instagram engagement by 4.3× and reduced CAC by 38% in 90 "
 "days."
-msgstr ""
+msgstr "زادت Nova Retail تفاعل إنستغرام بمقدار 4.3 ضعف وخفّضت تكلفة الاستحواذ بنسبة 38% خلال 90 يوماً."
 
 #: apps/solutions/catalog.py:41
 msgid "Paid ads strategy"
-msgstr ""
+msgstr "استراتيجية الإعلانات المدفوعة"
 
 #: apps/solutions/catalog.py:42
 msgid "Scale customer acquisition with measurable paid media."
-msgstr ""
+msgstr "وسِّع اكتساب العملاء عبر وسائط مدفوعة قابلة للقياس."
 
 #: apps/solutions/catalog.py:44
 msgid ""
 "Multi-channel paid media strategy across Meta, Google, TikTok and LinkedIn "
 "built on forecasted unit economics."
-msgstr ""
+msgstr "استراتيجية وسائط مدفوعة متعددة القنوات عبر Meta وGoogle وTikTok وLinkedIn مبنية على اقتصاديات وحدة متوقعة."
 
 #: apps/solutions/catalog.py:48
 msgid "Full-funnel campaign architecture"
-msgstr ""
+msgstr "هندسة حملات متكاملة"
 
 #: apps/solutions/catalog.py:49
 msgid "Creative testing framework"
-msgstr ""
+msgstr "إطار لاختبار المحتوى الإبداعي"
 
 #: apps/solutions/catalog.py:50
 msgid "Bid and budget pacing automation"
-msgstr ""
+msgstr "أتمتة المزايدات وتقنين الميزانية"
 
 #: apps/solutions/catalog.py:51
 msgid "Weekly performance reports"
-msgstr ""
+msgstr "تقارير أداء أسبوعية"
 
 #: apps/solutions/catalog.py:54
 msgid "Map funnel and KPIs"
-msgstr ""
+msgstr "رسم خريطة القمع ومؤشرات الأداء"
 
 #: apps/solutions/catalog.py:55
 msgid "Design campaign architecture"
-msgstr ""
+msgstr "تصميم هندسة الحملات"
 
 #: apps/solutions/catalog.py:56
 msgid "Launch creative tests"
-msgstr ""
+msgstr "إطلاق اختبارات إبداعية"
 
 #: apps/solutions/catalog.py:57
 msgid "Scale winning cohorts"
-msgstr ""
+msgstr "توسيع المجموعات الفائزة"
 
 #: apps/solutions/catalog.py:60
 msgid "E-commerce scaling to new geos"
-msgstr ""
+msgstr "تجارة إلكترونية تتوسع في مناطق جديدة"
 
 #: apps/solutions/catalog.py:61
 msgid "SaaS driving demo bookings"
-msgstr ""
+msgstr "SaaS تدفع حجوزات العروض التوضيحية"
 
 #: apps/solutions/catalog.py:62
 msgid "Marketplace boosting liquidity"
-msgstr ""
+msgstr "سوق يعزز السيولة"
 
 #: apps/solutions/catalog.py:65
 msgid ""
 "Helix Analytics lowered cost-per-demo by 52% while tripling booked meetings."
-msgstr ""
+msgstr "خفّضت Helix Analytics تكلفة كل عرض توضيحي بنسبة 52% مع مضاعفة الاجتماعات المحجوزة ثلاث مرات."
 
 #: apps/solutions/catalog.py:71
 msgid "Branding strategy"
-msgstr ""
+msgstr "استراتيجية الهوية التجارية"
 
 #: apps/solutions/catalog.py:72
 msgid "Define a distinct voice, story and identity."
-msgstr ""
+msgstr "حدِّد صوتاً وقصة وهوية مميزة."
 
 #: apps/solutions/catalog.py:74
 msgid ""
 "From brand archetype to visual system — everything that makes your brand "
 "unmistakable at every touchpoint."
-msgstr ""
+msgstr "من نموذج العلامة إلى النظام البصري — كل ما يجعل علامتك مميزة في كل نقطة تواصل."
 
 #: apps/solutions/catalog.py:78
 msgid "Brand positioning statement"
-msgstr ""
+msgstr "بيان تموضع العلامة"
 
 #: apps/solutions/catalog.py:79
 msgid "Tone of voice guidelines"
-msgstr ""
+msgstr "دليل نبرة الصوت"
 
 #: apps/solutions/catalog.py:80
 msgid "Visual identity system"
-msgstr ""
+msgstr "نظام الهوية البصرية"
 
 #: apps/solutions/catalog.py:81
 msgid "Rollout playbook"
-msgstr ""
+msgstr "دليل الإطلاق"
 
 #: apps/solutions/catalog.py:84
 msgid "Discovery workshops"
-msgstr ""
+msgstr "ورش الاكتشاف"
 
 #: apps/solutions/catalog.py:85
 msgid "Positioning & narrative"
-msgstr ""
+msgstr "التموضع والسرد"
 
 #: apps/solutions/catalog.py:86
 msgid "Visual identity design"
-msgstr ""
+msgstr "تصميم الهوية البصرية"
 
 #: apps/solutions/catalog.py:87
 msgid "Guidelines & rollout"
-msgstr ""
+msgstr "الإرشادات والإطلاق"
 
 #: apps/solutions/catalog.py:90
 msgid "Rebrand after a funding round"
-msgstr ""
+msgstr "تجديد الهوية بعد جولة تمويل"
 
 #: apps/solutions/catalog.py:91
 msgid "New product sub-brand"
-msgstr ""
+msgstr "علامة فرعية لمنتج جديد"
 
 #: apps/solutions/catalog.py:92
 msgid "Refreshing legacy brands"
-msgstr ""
+msgstr "تجديد العلامات القديمة"
 
 #: apps/solutions/catalog.py:94
 msgid "Atlas Studio's rebrand lifted aided recall by 3.8× in 6 months."
-msgstr ""
+msgstr "رفع تجديد هوية Atlas Studio التذكر المدعوم 3.8 أضعاف خلال 6 أشهر."
 
 #: apps/solutions/catalog.py:99
 msgid "SEO & content strategy"
-msgstr ""
+msgstr "استراتيجية SEO والمحتوى"
 
 #: apps/solutions/catalog.py:100
 msgid "Win compounding organic traffic."
-msgstr ""
+msgstr "اكسب زيارات عضوية متراكمة."
 
 #: apps/solutions/catalog.py:102
 msgid ""
 "Search-first content planning across topical clusters, technical SEO "
 "foundations, and programmatic content opportunities."
-msgstr ""
+msgstr "تخطيط محتوى موجَّه نحو البحث عبر مجموعات موضوعية وأساسيات SEO تقنية وفرص محتوى برمجي."
 
 #: apps/solutions/catalog.py:106
 msgid "Keyword cluster roadmap"
-msgstr ""
+msgstr "خارطة عناقيد الكلمات المفتاحية"
 
 #: apps/solutions/catalog.py:107
 msgid "Editorial calendar"
-msgstr ""
+msgstr "تقويم تحريري"
 
 #: apps/solutions/catalog.py:108
 msgid "Technical SEO audit"
-msgstr ""
+msgstr "تدقيق SEO تقني"
 
 #: apps/solutions/catalog.py:109
 msgid "Link-building playbook"
-msgstr ""
+msgstr "دليل بناء الروابط"
 
 #: apps/solutions/catalog.py:112
 msgid "Keyword & competitor research"
-msgstr ""
+msgstr "بحث الكلمات المفتاحية والمنافسين"
 
 #: apps/solutions/catalog.py:113
 msgid "Topical authority map"
-msgstr ""
+msgstr "خريطة السلطة الموضوعية"
 
 #: apps/solutions/catalog.py:114
 msgid "Content production"
-msgstr ""
+msgstr "إنتاج المحتوى"
 
 #: apps/solutions/catalog.py:115
 msgid "Measure and refresh"
-msgstr ""
+msgstr "قياس وتحديث"
 
 #: apps/solutions/catalog.py:118
 msgid "New SaaS entering a market"
-msgstr ""
+msgstr "شركة SaaS جديدة تدخل السوق"
 
 #: apps/solutions/catalog.py:119
 msgid "Media brand expanding verticals"
-msgstr ""
+msgstr "علامة إعلامية توسّع قطاعاتها"
 
 #: apps/solutions/catalog.py:120
 msgid "B2B lowering paid dependency"
-msgstr ""
+msgstr "شركة B2B تقلّل اعتمادها على المدفوع"
 
 #: apps/solutions/catalog.py:123
 msgid ""
 "Northwind tripled organic signups in 9 months with a topical authority plan."
-msgstr ""
+msgstr "ضاعفت Northwind اشتراكاتها العضوية ثلاث مرات خلال 9 أشهر بخطة سلطة موضوعية."
 
 #: apps/solutions/catalog.py:129
 msgid "Email marketing strategy"
-msgstr ""
+msgstr "استراتيجية التسويق عبر البريد الإلكتروني"
 
 #: apps/solutions/catalog.py:130
 msgid "Convert, retain and reactivate with lifecycle email."
-msgstr ""
+msgstr "حوّل، احتفظ وأعِد التفعيل عبر البريد الإلكتروني لدورة الحياة."
 
 #: apps/solutions/catalog.py:132
 msgid ""
 "Lifecycle email programs across onboarding, promotion, retention and win-"
 "back, with segmentation and deliverability at the core."
-msgstr ""
+msgstr "برامج بريد إلكتروني لدورة الحياة تشمل التأهيل والترويج والاحتفاظ والاستعادة، مع التجزئة والقابلية للتسليم في صميمها."
 
 #: apps/solutions/catalog.py:136
 msgid "Lifecycle program design"
-msgstr ""
+msgstr "تصميم برنامج دورة الحياة"
 
 #: apps/solutions/catalog.py:137
 msgid "Segmentation strategy"
-msgstr ""
+msgstr "استراتيجية التجزئة"
 
 #: apps/solutions/catalog.py:138
 msgid "Template system"
-msgstr ""
+msgstr "نظام القوالب"
 
 #: apps/solutions/catalog.py:139
 msgid "A/B testing roadmap"
-msgstr ""
+msgstr "خارطة اختبارات A/B"
 
 #: apps/solutions/catalog.py:142
 msgid "Audit CRM & list health"
-msgstr ""
+msgstr "تدقيق CRM وصحة القوائم"
 
 #: apps/solutions/catalog.py:143
 msgid "Map lifecycle stages"
-msgstr ""
+msgstr "رسم خريطة مراحل دورة الحياة"
 
 #: apps/solutions/catalog.py:144
 msgid "Design flows and creative"
-msgstr ""
+msgstr "تصميم التدفقات والمحتوى الإبداعي"
 
 #: apps/solutions/catalog.py:145
 msgid "Launch and optimize"
-msgstr ""
+msgstr "إطلاق وتحسين"
 
 #: apps/solutions/catalog.py:148
 msgid "E-commerce retention"
-msgstr ""
+msgstr "الاحتفاظ في التجارة الإلكترونية"
 
 #: apps/solutions/catalog.py:149
 msgid "SaaS onboarding"
-msgstr ""
+msgstr "تأهيل SaaS"
 
 #: apps/solutions/catalog.py:150
 msgid "Event and webinar nurture"
-msgstr ""
+msgstr "رعاية الفعاليات والندوات عبر الإنترنت"
 
 #: apps/solutions/catalog.py:152
 #, python-format
 msgid "Lumen Co. recovered 18% of abandoned carts with a 3-step flow."
-msgstr ""
+msgstr "استعادت Lumen Co. 18% من العربات المتروكة عبر تدفق من 3 خطوات."
 
 #: apps/solutions/catalog.py:157
 msgid "Campaign analytics & optimization"
-msgstr ""
+msgstr "تحليلات الحملات وتحسينها"
 
 #: apps/solutions/catalog.py:158
 msgid "Measure what matters and improve every month."
-msgstr ""
+msgstr "قِس ما يهم وحسِّن كل شهر."
 
 #: apps/solutions/catalog.py:160
 msgid ""
 "Set up reliable measurement, build an executive dashboard, and run a "
 "disciplined experiment cadence."
-msgstr ""
+msgstr "أعِد قياساً موثوقاً، وابنِ لوحة قيادة تنفيذية، ونفِّذ إيقاع تجارب منضبطاً."
 
 #: apps/solutions/catalog.py:164
 msgid "Unified KPI dashboard"
-msgstr ""
+msgstr "لوحة قيادة موحَّدة لمؤشرات الأداء"
 
 #: apps/solutions/catalog.py:165
 msgid "Experiment backlog"
-msgstr ""
+msgstr "قائمة التجارب المعلقة"
 
 #: apps/solutions/catalog.py:166
 msgid "Attribution framework"
-msgstr ""
+msgstr "إطار الإسناد"
 
 #: apps/solutions/catalog.py:167
 msgid "Monthly growth review"
-msgstr ""
+msgstr "مراجعة نمو شهرية"
 
 #: apps/solutions/catalog.py:170
 msgid "KPI & measurement design"
-msgstr ""
+msgstr "تصميم مؤشرات الأداء والقياس"
 
 #: apps/solutions/catalog.py:171
 msgid "Dashboard & data pipelines"
-msgstr ""
+msgstr "لوحة القيادة وخطوط أنابيب البيانات"
 
 #: apps/solutions/catalog.py:172
 msgid "Experiment planning"
-msgstr ""
+msgstr "تخطيط التجارب"
 
 #: apps/solutions/catalog.py:173
 msgid "Iterate and scale wins"
-msgstr ""
+msgstr "كرِّر ووسِّع الانتصارات"
 
 #: apps/solutions/catalog.py:176
 msgid "Mature brands seeking incremental wins"
-msgstr ""
+msgstr "علامات ناضجة تبحث عن مكاسب تدريجية"
 
 #: apps/solutions/catalog.py:177
 msgid "Agencies needing reporting rigor"
-msgstr ""
+msgstr "وكالات تحتاج إلى صرامة في التقارير"
 
 #: apps/solutions/catalog.py:178
 msgid "Growth teams scaling cross-channel"
-msgstr ""
+msgstr "فرق نمو توسّع متعدد القنوات"
 
 #: apps/solutions/catalog.py:180
 msgid "Orbit Mobility shipped 24 experiments in a quarter; 9 were winners."
-msgstr ""
+msgstr "أطلقت Orbit Mobility 24 تجربة في ربع واحد، 9 منها كانت رابحة."
 
 #: apps/solutions/forms.py:22
 msgid "Brand awareness"
-msgstr ""
+msgstr "الوعي بالعلامة التجارية"
 
 #: apps/solutions/forms.py:23
 msgid "Lead generation"
-msgstr ""
+msgstr "توليد العملاء المحتملين"
 
 #: apps/solutions/forms.py:24
 msgid "Sales & conversions"
-msgstr ""
+msgstr "المبيعات والتحويلات"
 
 #: apps/solutions/forms.py:25
 msgid "Retention & loyalty"
-msgstr ""
+msgstr "الاحتفاظ والولاء"
 
 #: apps/solutions/forms.py:26
 msgid "Product launch"
-msgstr ""
+msgstr "إطلاق منتج"
 
 #: apps/solutions/forms.py:30
 msgid "Less than $5k/month"
-msgstr ""
+msgstr "أقل من 5 آلاف دولار شهرياً"
 
 #: apps/solutions/forms.py:31
 msgid "$5k – $25k/month"
-msgstr ""
+msgstr "5 آلاف – 25 ألف دولار شهرياً"
 
 #: apps/solutions/forms.py:32
 msgid "$25k – $100k/month"
-msgstr ""
+msgstr "25 – 100 ألف دولار شهرياً"
 
 #: apps/solutions/forms.py:33
 msgid "$100k+/month"
-msgstr ""
+msgstr "أكثر من 100 ألف دولار شهرياً"
 
 #: apps/solutions/forms.py:37
 msgid "4 weeks"
-msgstr ""
+msgstr "4 أسابيع"
 
 #: apps/solutions/forms.py:38
 msgid "3 months"
-msgstr ""
+msgstr "3 أشهر"
 
 #: apps/solutions/forms.py:39
 msgid "6 months"
-msgstr ""
+msgstr "6 أشهر"
 
 #: apps/solutions/forms.py:40
 msgid "12 months"
-msgstr ""
+msgstr "12 شهراً"
 
 #: apps/solutions/forms.py:45
 msgid "Primary objective"
-msgstr ""
+msgstr "الهدف الرئيسي"
 
 #: apps/solutions/forms.py:48 templates/solutions/plan_detail.html:35
 #: templates/solutions/wizard.html:41
@@ -729,35 +729,35 @@ msgstr "الجمهور المستهدف"
 
 #: apps/solutions/forms.py:49
 msgid "Demographics, interests, pains, channels they use."
-msgstr ""
+msgstr "الخصائص الديموغرافية والاهتمامات ونقاط الألم والقنوات المستخدمة."
 
 #: apps/solutions/forms.py:51
 msgid "Budget range"
-msgstr ""
+msgstr "نطاق الميزانية"
 
 #: apps/solutions/forms.py:52
 msgid "Campaign duration"
-msgstr ""
+msgstr "مدة الحملة"
 
 #: apps/solutions/forms.py:55 templates/solutions/wizard.html:46
 msgid "Current challenges"
-msgstr ""
+msgstr "التحديات الحالية"
 
 #: apps/solutions/models.py:39
 msgid "Draft"
-msgstr ""
+msgstr "مسودة"
 
 #: apps/solutions/models.py:40
 msgid "Planning"
-msgstr ""
+msgstr "تخطيط"
 
 #: apps/solutions/models.py:42
 msgid "Completed"
-msgstr ""
+msgstr "مكتمل"
 
 #: apps/solutions/views.py:141
 msgid "Please complete the previous steps first."
-msgstr ""
+msgstr "يرجى إكمال الخطوات السابقة أولاً."
 
 #: apps/solutions/views.py:176
 msgid "Your strategy plan has been saved."
@@ -782,7 +782,7 @@ msgstr "أو تابع مع"
 #: templates/account/_social.html:11 templates/account/_social.html:12
 #: templates/account/_social.html:13
 msgid "Configure in admin → Social applications"
-msgstr ""
+msgstr "قم بالإعداد من لوحة الإدارة ← التطبيقات الاجتماعية"
 
 #: templates/account/login.html:3 templates/account/login.html:23
 #: templates/account/signup.html:41 templates/base.html:65
@@ -796,7 +796,7 @@ msgstr "مرحباً بعودتك"
 
 #: templates/account/login.html:8
 msgid "Sign in to continue planning winning campaigns."
-msgstr ""
+msgstr "سجّل الدخول لمتابعة تخطيط حملات ناجحة."
 
 #: templates/account/login.html:13
 #: templates/account/password_reset_confirm.html:12
@@ -812,69 +812,69 @@ msgstr "نسيت كلمة المرور؟"
 
 #: templates/account/login.html:26
 msgid "New to Marketly?"
-msgstr ""
+msgstr "جديد على Marketly؟"
 
 #: templates/account/login.html:26
 msgid "Create an account"
-msgstr ""
+msgstr "أنشئ حساباً"
 
 #: templates/account/password_reset_confirm.html:3
 #: templates/account/password_reset_confirm.html:31
 msgid "Reset password"
-msgstr ""
+msgstr "إعادة تعيين كلمة المرور"
 
 #: templates/account/password_reset_confirm.html:7
 msgid "Set a new password"
-msgstr ""
+msgstr "تعيين كلمة مرور جديدة"
 
 #: templates/account/password_reset_confirm.html:8
 msgid "Enter the code we sent you and choose a new password."
-msgstr ""
+msgstr "أدخل الرمز الذي أرسلناه لك واختر كلمة مرور جديدة."
 
 #: templates/account/password_reset_confirm.html:16
 #: templates/account/verify_email.html:18
 msgid "Verification code"
-msgstr ""
+msgstr "رمز التحقق"
 
 #: templates/account/password_reset_confirm.html:26
 msgid "Confirm"
-msgstr ""
+msgstr "تأكيد"
 
 #: templates/account/password_reset_request.html:3
 msgid "Forgot password"
-msgstr ""
+msgstr "نسيت كلمة المرور"
 
 #: templates/account/password_reset_request.html:7
 msgid "Forgot your password?"
-msgstr ""
+msgstr "هل نسيت كلمة المرور؟"
 
 #: templates/account/password_reset_request.html:8
 msgid "We'll email you a 6-digit reset code."
-msgstr ""
+msgstr "سنرسل إليك بالبريد الإلكتروني رمز إعادة تعيين مكوناً من 6 أرقام."
 
 #: templates/account/password_reset_request.html:15
 msgid "Send reset code"
-msgstr ""
+msgstr "إرسال رمز إعادة التعيين"
 
 #: templates/account/password_reset_request.html:17
 msgid "Back to sign in"
-msgstr ""
+msgstr "العودة إلى تسجيل الدخول"
 
 #: templates/account/profile.html:3 templates/dashboard/home.html:20
 msgid "Your profile"
-msgstr ""
+msgstr "ملفك الشخصي"
 
 #: templates/account/profile.html:6
 msgid "Profile & preferences"
-msgstr ""
+msgstr "الملف الشخصي والتفضيلات"
 
 #: templates/account/profile.html:7
 msgid "Update your personal, company and preference settings."
-msgstr ""
+msgstr "حدِّث إعداداتك الشخصية وبيانات الشركة وتفضيلاتك."
 
 #: templates/account/profile.html:11
 msgid "Personal info"
-msgstr ""
+msgstr "المعلومات الشخصية"
 
 #: templates/account/profile.html:13 templates/account/signup.html:13
 msgid "First name"
@@ -886,15 +886,15 @@ msgstr "اسم العائلة"
 
 #: templates/account/profile.html:17
 msgid "Phone"
-msgstr ""
+msgstr "الهاتف"
 
 #: templates/account/profile.html:18
 msgid "Bio"
-msgstr ""
+msgstr "نبذة"
 
 #: templates/account/profile.html:19
 msgid "Avatar"
-msgstr ""
+msgstr "الصورة الرمزية"
 
 #: templates/account/profile.html:22 templates/base.html:101
 msgid "Company"
@@ -902,7 +902,7 @@ msgstr "الشركة"
 
 #: templates/account/profile.html:23 templates/solutions/wizard.html:22
 msgid "Company name"
-msgstr ""
+msgstr "اسم الشركة"
 
 #: templates/account/profile.html:25 templates/solutions/wizard.html:24
 msgid "Industry"
@@ -910,7 +910,7 @@ msgstr "القطاع"
 
 #: templates/account/profile.html:26
 msgid "Size"
-msgstr ""
+msgstr "الحجم"
 
 #: templates/account/profile.html:28 templates/solutions/wizard.html:27
 msgid "Website"
@@ -918,43 +918,43 @@ msgstr "الموقع"
 
 #: templates/account/profile.html:29
 msgid "Country"
-msgstr ""
+msgstr "البلد"
 
 #: templates/account/profile.html:30
 msgid "Description"
-msgstr ""
+msgstr "الوصف"
 
 #: templates/account/profile.html:33
 msgid "Preferences"
-msgstr ""
+msgstr "التفضيلات"
 
 #: templates/account/profile.html:35 templates/dashboard/home.html:22
 msgid "Language"
-msgstr ""
+msgstr "اللغة"
 
 #: templates/account/profile.html:36 templates/dashboard/home.html:23
 msgid "Theme"
-msgstr ""
+msgstr "السمة"
 
 #: templates/account/profile.html:38
 msgid "Send me marketing tips and product updates"
-msgstr ""
+msgstr "أرسِل لي نصائح تسويقية وتحديثات المنتج"
 
 #: templates/account/profile.html:42
 msgid "Security"
-msgstr ""
+msgstr "الأمان"
 
 #: templates/account/profile.html:43
 msgid "Need to change your password?"
-msgstr ""
+msgstr "هل تحتاج إلى تغيير كلمة المرور؟"
 
 #: templates/account/profile.html:45
 msgid "Reset via email code"
-msgstr ""
+msgstr "إعادة التعيين عبر رمز بالبريد الإلكتروني"
 
 #: templates/account/profile.html:48
 msgid "Save changes"
-msgstr ""
+msgstr "حفظ التغييرات"
 
 #: templates/account/signup.html:3 templates/account/signup.html:7
 msgid "Create your account"
@@ -962,31 +962,31 @@ msgstr "أنشئ حسابك"
 
 #: templates/account/signup.html:8
 msgid "Free to get started — no credit card required."
-msgstr ""
+msgstr "مجاني للبدء — بدون بطاقة ائتمان."
 
 #: templates/account/signup.html:38
 msgid "Create account"
-msgstr ""
+msgstr "إنشاء حساب"
 
 #: templates/account/signup.html:41
 msgid "Already have an account?"
-msgstr ""
+msgstr "هل لديك حساب بالفعل؟"
 
 #: templates/account/verify_email.html:3 templates/account/verify_email.html:7
 #: templates/emails/verification_code.html:5
 msgid "Verify your email"
-msgstr ""
+msgstr "تحقّق من بريدك الإلكتروني"
 
 #: templates/account/verify_email.html:10
 #, python-format
 msgid ""
 "We sent a 6-digit code to <strong>%(email)s</strong>. Enter it below to "
 "activate your account."
-msgstr ""
+msgstr "أرسلنا رمزاً من 6 أرقام إلى <strong>%(email)s</strong>. أدخله أدناه لتفعيل حسابك."
 
 #: templates/account/verify_email.html:12
 msgid "Enter the 6-digit code we emailed you."
-msgstr ""
+msgstr "أدخل الرمز المكوَّن من 6 أرقام الذي أرسلناه إليك."
 
 #: templates/account/verify_email.html:22
 msgid "Verify email"
@@ -994,27 +994,27 @@ msgstr "التحقق من البريد"
 
 #: templates/account/verify_email.html:24
 msgid "Resend code"
-msgstr ""
+msgstr "إعادة إرسال الرمز"
 
 #: templates/base.html:7 templates/core/home.html:3
 msgid "Marketing strategies that grow brands"
-msgstr ""
+msgstr "استراتيجيات تسويقية تُنمّي العلامات التجارية"
 
 #: templates/base.html:8
 msgid "Plan, launch and scale premium marketing strategies with Marketly."
-msgstr ""
+msgstr "خطّط وأطلق ووسِّع استراتيجيات تسويق متميزة مع Marketly."
 
 #: templates/base.html:16
 msgid "Skip to content"
-msgstr ""
+msgstr "تخطَّ إلى المحتوى"
 
 #: templates/base.html:25
 msgid "Open menu"
-msgstr ""
+msgstr "فتح القائمة"
 
 #: templates/base.html:29
 msgid "Main navigation"
-msgstr ""
+msgstr "التنقل الرئيسي"
 
 #: templates/base.html:30 templates/base.html:95 templates/core/home.html:56
 #: templates/solutions/list.html:3 templates/solutions/list.html:8
@@ -1043,7 +1043,7 @@ msgstr "تواصل"
 
 #: templates/base.html:54
 msgid "Toggle dark mode"
-msgstr ""
+msgstr "تبديل الوضع الداكن"
 
 #: templates/base.html:60 templates/base.html:109
 #: templates/dashboard/home.html:3
@@ -1060,23 +1060,23 @@ msgstr "ابدأ الآن"
 
 #: templates/base.html:91
 msgid "Marketing strategies that grow brands across every channel."
-msgstr ""
+msgstr "استراتيجيات تسويقية تُنمّي العلامات التجارية عبر كل قناة."
 
 #: templates/base.html:94
 msgid "Product"
-msgstr ""
+msgstr "المنتج"
 
 #: templates/base.html:103
 msgid "About"
-msgstr ""
+msgstr "عن الشركة"
 
 #: templates/base.html:104
 msgid "Careers"
-msgstr ""
+msgstr "الوظائف"
 
 #: templates/base.html:107
 msgid "Account"
-msgstr ""
+msgstr "الحساب"
 
 #: templates/base.html:110
 msgid "Profile"
@@ -1088,540 +1088,540 @@ msgstr "إنشاء حساب"
 
 #: templates/base.html:118
 msgid "All rights reserved."
-msgstr ""
+msgstr "جميع الحقوق محفوظة."
 
 #: templates/billing/cancel.html:3 templates/billing/cancel.html:7
 msgid "Payment canceled"
-msgstr ""
+msgstr "تم إلغاء الدفع"
 
 #: templates/billing/cancel.html:8
 msgid "No worries — you can try again any time."
-msgstr ""
+msgstr "لا عليك — يمكنك المحاولة مرة أخرى في أي وقت."
 
 #: templates/billing/cancel.html:10 templates/billing/checkout.html:23
 msgid "Back to pricing"
-msgstr ""
+msgstr "العودة إلى التسعير"
 
 #: templates/billing/cancel.html:11 templates/billing/success.html:11
 msgid "Go to dashboard"
-msgstr ""
+msgstr "الذهاب إلى لوحة التحكم"
 
 #: templates/billing/checkout.html:3 templates/billing/checkout.html:7
 msgid "Checkout"
-msgstr ""
+msgstr "إتمام الشراء"
 
 #: templates/billing/checkout.html:8
 msgid "You are about to subscribe to the following plan:"
-msgstr ""
+msgstr "أنت على وشك الاشتراك في الخطة التالية:"
 
 #: templates/billing/checkout.html:15
 msgid ""
 "Stripe is not configured in this environment — clicking 'Pay' will simulate "
 "a successful test payment for development."
-msgstr ""
+msgstr "لم يتم إعداد Stripe في هذه البيئة — النقر على «ادفع» سيحاكي عملية دفع تجريبية ناجحة للتطوير."
 
 #: templates/billing/checkout.html:20
 msgid "Activate free plan"
-msgstr ""
+msgstr "تفعيل الخطة المجانية"
 
 #: templates/billing/checkout.html:20
 msgid "Proceed to payment"
-msgstr ""
+msgstr "المتابعة إلى الدفع"
 
 #: templates/billing/pricing.html:10
 msgid "Plans that scale with your marketing"
-msgstr ""
+msgstr "خطط تتطور مع تسويقك"
 
 #: templates/billing/pricing.html:11
 msgid "Start free. Upgrade any time. Cancel whenever."
-msgstr ""
+msgstr "ابدأ مجاناً. رقِّ في أي وقت. ألغِ متى شئت."
 
 #: templates/billing/pricing.html:16
 msgid "Most popular"
-msgstr ""
+msgstr "الأكثر شيوعاً"
 
 #: templates/billing/pricing.html:24
 msgid "Start for free"
-msgstr ""
+msgstr "ابدأ مجاناً"
 
 #: templates/billing/pricing.html:24
 msgid "Choose plan"
-msgstr ""
+msgstr "اختر الخطة"
 
 #: templates/billing/pricing.html:27
 msgid "Plans will appear here once seeded. Run: python manage.py seed_demo"
-msgstr ""
+msgstr "ستظهر الخطط هنا بعد إدخال البيانات الأولية. نفِّذ: python manage.py seed_demo"
 
 #: templates/billing/success.html:3
 msgid "Payment successful"
-msgstr ""
+msgstr "نجح الدفع"
 
 #: templates/billing/success.html:8
 msgid "You're all set!"
-msgstr ""
+msgstr "أنت جاهز تماماً!"
 
 #: templates/billing/success.html:9
 msgid "Thanks for upgrading. Premium features are now unlocked."
-msgstr ""
+msgstr "شكراً لترقيتك. تم فتح الميزات المتميزة الآن."
 
 #: templates/billing/success.html:10
 #: templates/emails/payment_confirmation.html:10
 #: templates/emails/payment_confirmation.txt:5
 msgid "Reference"
-msgstr ""
+msgstr "المرجع"
 
 #: templates/chatbot/home.html:9
 msgid "Conversations"
-msgstr ""
+msgstr "المحادثات"
 
 #: templates/chatbot/home.html:10
 msgid "New"
-msgstr ""
+msgstr "جديد"
 
 #: templates/chatbot/home.html:15
 msgid "Start a new chat to begin."
-msgstr ""
+msgstr "ابدأ محادثة جديدة للبدء."
 
 #: templates/chatbot/home.html:22
 msgid "New conversation"
-msgstr ""
+msgstr "محادثة جديدة"
 
 #: templates/chatbot/home.html:23
 msgid "AI marketing assistant"
-msgstr ""
+msgstr "مساعد التسويق بالذكاء الاصطناعي"
 
 #: templates/chatbot/home.html:25
 msgid "Mock provider — wire a real LLM later"
-msgstr ""
+msgstr "مزوّد وهمي — اربط نموذجاً حقيقياً لاحقاً"
 
 #: templates/chatbot/home.html:33
 msgid ""
 "Hi! I'm your marketing assistant. Ask me about strategy, channels, budgets, "
 "creative ideas, or KPIs."
-msgstr ""
+msgstr "مرحباً! أنا مساعدك التسويقي. اسألني عن الاستراتيجية والقنوات والميزانيات والأفكار الإبداعية أو مؤشرات الأداء."
 
 #: templates/chatbot/home.html:42
 msgid "Ask anything about marketing…"
-msgstr ""
+msgstr "اسأل أي شيء عن التسويق…"
 
 #: templates/chatbot/home.html:43
 msgid "Send"
-msgstr ""
+msgstr "إرسال"
 
 #: templates/core/contact.html:10
 msgid "Let's talk marketing"
-msgstr ""
+msgstr "لنتحدث عن التسويق"
 
 #: templates/core/contact.html:11
 msgid ""
 "Tell us about your brand and goals — we'll get back to you within one "
 "business day."
-msgstr ""
+msgstr "أخبرنا عن علامتك وأهدافك — سنعود إليك خلال يوم عمل واحد."
 
 #: templates/core/contact.html:16
 msgid "Your name"
-msgstr ""
+msgstr "اسمك"
 
 #: templates/core/contact.html:24
 msgid "How can we help?"
-msgstr ""
+msgstr "كيف يمكننا مساعدتك؟"
 
 #: templates/core/contact.html:27
 msgid "Send message"
-msgstr ""
+msgstr "إرسال الرسالة"
 
 #: templates/core/home.html:10
 msgid "AI-powered marketing planning"
-msgstr ""
+msgstr "تخطيط تسويقي مدعوم بالذكاء الاصطناعي"
 
 #: templates/core/home.html:11
 msgid "Marketing strategies that"
-msgstr ""
+msgstr "استراتيجيات تسويقية"
 
 #: templates/core/home.html:11
 msgid "grow brands."
-msgstr ""
+msgstr "تُنمّي العلامات التجارية."
 
 #: templates/core/home.html:12
 msgid ""
 "Plan, launch and scale premium campaigns across every channel — with AI "
 "assistance, ready-to-use playbooks, and a team-friendly dashboard."
-msgstr ""
+msgstr "خطّط وأطلق ووسِّع حملات متميزة عبر كل قناة — بمساعدة الذكاء الاصطناعي وأدلة جاهزة ولوحة تحكم ملائمة للفرق."
 
 #: templates/core/home.html:14 templates/core/home.html:107
 msgid "Explore solutions"
-msgstr ""
+msgstr "استكشاف الحلول"
 
 #: templates/core/home.html:15
 msgid "See pricing"
-msgstr ""
+msgstr "عرض التسعير"
 
 #: templates/core/home.html:19
 msgid "Trusted by growth teams worldwide"
-msgstr ""
+msgstr "موثوق به من قِبل فرق النمو حول العالم"
 
 #: templates/core/home.html:23
 msgid "Your strategy, ready in minutes"
-msgstr ""
+msgstr "استراتيجيتك جاهزة في دقائق"
 
 #: templates/core/home.html:24
 msgid ""
 "Tell us about your company and goals. We'll generate a full marketing plan "
 "tailored to your industry, budget, and audience."
-msgstr ""
+msgstr "أخبرنا عن شركتك وأهدافك. سننشئ خطة تسويق كاملة مخصصة لقطاعك وميزانيتك وجمهورك."
 
 #: templates/core/home.html:26
 msgid "ROAS uplift"
-msgstr ""
+msgstr "تحسُّن العائد على الإنفاق الإعلاني"
 
 #: templates/core/home.html:27
 msgid "Faster planning"
-msgstr ""
+msgstr "تخطيط أسرع"
 
 #: templates/core/home.html:28
 msgid "Experiments/quarter"
-msgstr ""
+msgstr "تجارب / ربع"
 
 #: templates/core/home.html:38
 msgid "Why Marketly"
-msgstr ""
+msgstr "لماذا Marketly"
 
 #: templates/core/home.html:39
 msgid "Everything you need to plan world-class campaigns"
-msgstr ""
+msgstr "كل ما تحتاجه لتخطيط حملات عالمية المستوى"
 
 #: templates/core/home.html:40
 msgid ""
 "From briefs to budgets, from copy to KPIs — a single workspace for growth "
 "teams and agencies."
-msgstr ""
+msgstr "من الملخصات إلى الميزانيات، ومن النصوص إلى مؤشرات الأداء — مساحة عمل واحدة لفرق النمو والوكالات."
 
 #: templates/core/home.html:43
 msgid "Goal-first planning"
-msgstr ""
+msgstr "تخطيط يبدأ من الهدف"
 
 #: templates/core/home.html:43
 msgid ""
 "Every strategy starts with a measurable outcome — we keep you focused on "
 "what matters."
-msgstr ""
+msgstr "كل استراتيجية تبدأ بنتيجة قابلة للقياس — نُبقيك مركِّزاً على ما يهم."
 
 #: templates/core/home.html:44
 msgid "AI-assisted drafts"
-msgstr ""
+msgstr "مسوّدات بمساعدة الذكاء الاصطناعي"
 
 #: templates/core/home.html:44
 msgid ""
 "Briefs, channel plans, and copy ideas generated in seconds and easy to "
 "refine."
-msgstr ""
+msgstr "ملخصات وخطط قنوات وأفكار نصوص تُولَّد في ثوانٍ ويسهل تحسينها."
 
 #: templates/core/home.html:45
 msgid "Benchmark-backed KPIs"
-msgstr ""
+msgstr "مؤشرات أداء مدعومة بمعايير مرجعية"
 
 #: templates/core/home.html:45
 msgid "Industry benchmarks and best-in-class KPI targets for every channel."
-msgstr ""
+msgstr "معايير صناعية وأهداف مؤشرات أداء من الدرجة الأولى لكل قناة."
 
 #: templates/core/home.html:46
 msgid "Multi-channel mix"
-msgstr ""
+msgstr "مزيج متعدد القنوات"
 
 #: templates/core/home.html:46
 msgid "Paid, organic, lifecycle, PR — plan them together instead of in silos."
-msgstr ""
+msgstr "مدفوع، عضوي، دورة حياة، علاقات عامة — خطِّط لها معاً بدلاً من عزلها."
 
 #: templates/core/home.html:47
 msgid "Experiment cadence"
-msgstr ""
+msgstr "إيقاع التجارب"
 
 #: templates/core/home.html:47
 msgid "Bake in a steady test-and-learn rhythm to compound growth every month."
-msgstr ""
+msgstr "ادمج إيقاع اختبار وتعلّم ثابتاً لتراكم النمو كل شهر."
 
 #: templates/core/home.html:48
 msgid "Multilingual"
-msgstr ""
+msgstr "متعدد اللغات"
 
 #: templates/core/home.html:48
 msgid "Work in English, French or Arabic — with RTL layout support."
-msgstr ""
+msgstr "اعمل بالإنجليزية أو الفرنسية أو العربية — مع دعم تخطيط RTL."
 
 #: templates/core/home.html:57
 msgid "Six marketing solutions, ready to deploy"
-msgstr ""
+msgstr "ست حلول تسويقية جاهزة للنشر"
 
 #: templates/core/home.html:58
 msgid "Hand-crafted playbooks you can personalize and save in one click."
-msgstr ""
+msgstr "أدلة معدّة يدوياً يمكنك تخصيصها وحفظها بنقرة واحدة."
 
 #: templates/core/home.html:86
 msgid "Testimonials"
-msgstr ""
+msgstr "الشهادات"
 
 #: templates/core/home.html:87
 msgid "Loved by growth teams"
-msgstr ""
+msgstr "محبوب من فرق النمو"
 
 #: templates/core/home.html:103
 msgid "Ready to plan your next winning campaign?"
-msgstr ""
+msgstr "هل أنت مستعد لتخطيط حملتك الرابحة التالية؟"
 
 #: templates/core/home.html:104
 msgid "Start free — no credit card required."
-msgstr ""
+msgstr "ابدأ مجاناً — لا تتطلّب بطاقة ائتمان."
 
 #: templates/core/home.html:106
 msgid "Create a free account"
-msgstr ""
+msgstr "أنشئ حساباً مجانياً"
 
 #: templates/dashboard/home.html:9
 msgid "Hello"
-msgstr ""
+msgstr "مرحباً"
 
 #: templates/dashboard/home.html:10
 msgid "Here's a snapshot of your marketing work."
-msgstr ""
+msgstr "إليك لقطة سريعة لعملك التسويقي."
 
 #: templates/dashboard/home.html:13
 msgid "New strategy"
-msgstr ""
+msgstr "استراتيجية جديدة"
 
 #: templates/dashboard/home.html:14
 msgid "Open AI chatbot"
-msgstr ""
+msgstr "فتح روبوت الدردشة الذكي"
 
 #: templates/dashboard/home.html:24
 msgid "Edit profile"
-msgstr ""
+msgstr "تعديل الملف الشخصي"
 
 #: templates/dashboard/home.html:27
 msgid "Subscription"
-msgstr ""
+msgstr "الاشتراك"
 
 #: templates/dashboard/home.html:30 templates/dashboard/home.html:90
 msgid "Status"
-msgstr ""
+msgstr "الحالة"
 
 #: templates/dashboard/home.html:32
 msgid "You're on the free plan."
-msgstr ""
+msgstr "أنت على الخطة المجانية."
 
 #: templates/dashboard/home.html:34
 msgid "Manage plan"
-msgstr ""
+msgstr "إدارة الخطة"
 
 #: templates/dashboard/home.html:37
 msgid "Quick actions"
-msgstr ""
+msgstr "إجراءات سريعة"
 
 #: templates/dashboard/home.html:39 templates/errors/404.html:12
 #: templates/recommendations/home.html:30
 msgid "Browse solutions"
-msgstr ""
+msgstr "تصفّح الحلول"
 
 #: templates/dashboard/home.html:40
 msgid "View recommendations"
-msgstr ""
+msgstr "عرض التوصيات"
 
 #: templates/dashboard/home.html:41
 msgid "Ask the AI chatbot"
-msgstr ""
+msgstr "اسأل روبوت الدردشة الذكي"
 
 #: templates/dashboard/home.html:46
 msgid "Saved strategies"
-msgstr ""
+msgstr "الاستراتيجيات المحفوظة"
 
 #: templates/dashboard/home.html:54
 msgid "No saved strategies yet. Start from a solution."
-msgstr ""
+msgstr "لا توجد استراتيجيات محفوظة بعد. ابدأ من أحد الحلول."
 
 #: templates/dashboard/home.html:58
 msgid "Recent chats"
-msgstr ""
+msgstr "المحادثات الأخيرة"
 
 #: templates/dashboard/home.html:66
 msgid "No conversations yet."
-msgstr ""
+msgstr "لا توجد محادثات بعد."
 
 #: templates/dashboard/home.html:71
 msgid "Campaign projects"
-msgstr ""
+msgstr "مشاريع الحملات"
 
 #: templates/dashboard/home.html:76
 msgid "No projects yet."
-msgstr ""
+msgstr "لا توجد مشاريع بعد."
 
 #: templates/dashboard/home.html:84
 msgid "Generate a plan to see recommendations."
-msgstr ""
+msgstr "أنشئ خطة لعرض التوصيات."
 
 #: templates/dashboard/home.html:88
 msgid "Payment history"
-msgstr ""
+msgstr "سجل المدفوعات"
 
 #: templates/dashboard/home.html:90
 msgid "Date"
-msgstr ""
+msgstr "التاريخ"
 
 #: templates/dashboard/home.html:90
 #: templates/emails/payment_confirmation.html:8
 #: templates/emails/payment_confirmation.txt:3
 msgid "Plan"
-msgstr ""
+msgstr "الخطة"
 
 #: templates/dashboard/home.html:90
 #: templates/emails/payment_confirmation.html:9
 #: templates/emails/payment_confirmation.txt:4
 msgid "Amount"
-msgstr ""
+msgstr "المبلغ"
 
 #: templates/dashboard/home.html:102
 msgid "No transactions yet."
-msgstr ""
+msgstr "لا توجد معاملات بعد."
 
 #: templates/emails/_layout.html:13
 msgid "Marketing strategies that grow brands."
-msgstr ""
+msgstr "استراتيجيات تسويقية تُنمّي العلامات التجارية."
 
 #: templates/emails/payment_confirmation.html:5
 msgid "Thanks for your payment"
-msgstr ""
+msgstr "شكراً على دفعتك"
 
 #: templates/emails/payment_confirmation.html:6
 msgid "Your subscription is active and premium features are unlocked."
-msgstr ""
+msgstr "اشتراكك نشط والميزات المتميزة مفتوحة."
 
 #: templates/emails/payment_confirmation.html:12
 msgid "Back to dashboard"
-msgstr ""
+msgstr "العودة إلى لوحة التحكم"
 
 #: templates/emails/payment_confirmation.txt:1
 msgid "Payment confirmed."
-msgstr ""
+msgstr "تم تأكيد الدفع."
 
 #: templates/emails/reset_code.html:5
 msgid "Reset your password"
-msgstr ""
+msgstr "أعد تعيين كلمة المرور"
 
 #: templates/emails/reset_code.html:6
 msgid "Use this 6-digit code to set a new password."
-msgstr ""
+msgstr "استخدم هذا الرمز المكوَّن من 6 أرقام لتعيين كلمة مرور جديدة."
 
 #: templates/emails/reset_code.html:8 templates/emails/reset_code.txt:3
 #: templates/emails/verification_code.txt:3
 #, python-format
 msgid "This code expires in %(ttl_minutes)s minutes."
-msgstr ""
+msgstr "تنتهي صلاحية هذا الرمز خلال %(ttl_minutes)s دقيقة."
 
 #: templates/emails/reset_code.txt:1
 msgid "Your Marketly password reset code:"
-msgstr ""
+msgstr "رمز إعادة تعيين كلمة مرور Marketly:"
 
 #: templates/emails/verification_code.html:6
 msgid "Enter this 6-digit code to activate your account."
-msgstr ""
+msgstr "أدخل هذا الرمز المكوَّن من 6 أرقام لتفعيل حسابك."
 
 #: templates/emails/verification_code.html:8
 #, python-format
 msgid ""
 "This code expires in %(ttl_minutes)s minutes. If you didn't request it, you "
 "can safely ignore this email."
-msgstr ""
+msgstr "تنتهي صلاحية هذا الرمز خلال %(ttl_minutes)s دقيقة. إذا لم تطلبه، يمكنك تجاهل هذه الرسالة بأمان."
 
 #: templates/emails/verification_code.txt:1
 msgid "Your Marketly verification code:"
-msgstr ""
+msgstr "رمز التحقق الخاص بك في Marketly:"
 
 #: templates/emails/welcome.html:6
 #, python-format
 msgid ""
 "Hi %(name)s, welcome aboard. Here's how to get the most out of Marketly:"
-msgstr ""
+msgstr "مرحباً %(name)s، أهلاً بك على متن الركب. إليك كيفية الاستفادة القصوى من Marketly:"
 
 #: templates/emails/welcome.html:8
 msgid "Browse solutions and start your first personalized plan."
-msgstr ""
+msgstr "تصفّح الحلول وابدأ أول خطة مخصصة لك."
 
 #: templates/emails/welcome.html:9
 msgid "Use the AI chatbot for ideas, briefs and copy."
-msgstr ""
+msgstr "استخدم روبوت الدردشة الذكي للحصول على أفكار وملخصات ونصوص."
 
 #: templates/emails/welcome.html:10
 msgid "Upgrade to unlock premium features and longer plans."
-msgstr ""
+msgstr "ترقَّ لفتح الميزات المتميزة والخطط الأطول."
 
 #: templates/emails/welcome.html:12
 msgid "Open Marketly"
-msgstr ""
+msgstr "فتح Marketly"
 
 #: templates/emails/welcome.txt:1
 #, python-format
 msgid "Hi %(name)s, welcome to Marketly!"
-msgstr ""
+msgstr "مرحباً %(name)s، أهلاً بك في Marketly!"
 
 #: templates/emails/welcome.txt:3
 msgid "Visit"
-msgstr ""
+msgstr "زيارة"
 
 #: templates/errors/404.html:3
 msgid "Page not found"
-msgstr ""
+msgstr "الصفحة غير موجودة"
 
 #: templates/errors/404.html:8
 msgid "We can't find that page."
-msgstr ""
+msgstr "لا يمكننا العثور على هذه الصفحة."
 
 #: templates/errors/404.html:9
 msgid "It may have moved or never existed. Let's get you back on track."
-msgstr ""
+msgstr "قد تكون قد نُقلت أو لم تكن موجودة أصلاً. لنعِدك إلى المسار الصحيح."
 
 #: templates/errors/404.html:11
 msgid "Back to home"
-msgstr ""
+msgstr "العودة إلى الصفحة الرئيسية"
 
 #: templates/recommendations/home.html:9
 msgid "Personalized suggestions"
-msgstr ""
+msgstr "اقتراحات مخصصة"
 
 #: templates/recommendations/home.html:10
 msgid ""
 "Filtered by the work you've done so far. Generate a plan from any solution "
 "to grow this list."
-msgstr ""
+msgstr "تم تصفيتها حسب العمل الذي أنجزته حتى الآن. أنشئ خطة من أي حل لتوسيع هذه القائمة."
 
 #: templates/recommendations/home.html:14
 msgid "All"
-msgstr ""
+msgstr "الكل"
 
 #: templates/recommendations/home.html:29
 msgid "No recommendations yet."
-msgstr ""
+msgstr "لا توجد توصيات بعد."
 
 #: templates/solutions/detail.html:7
 msgid "Solution"
-msgstr ""
+msgstr "الحل"
 
 #: templates/solutions/detail.html:17 templates/solutions/list.html:37
 msgid "Overview"
-msgstr ""
+msgstr "نظرة عامة"
 
 #: templates/solutions/detail.html:21 templates/solutions/list.html:41
 msgid "Key benefits"
-msgstr ""
+msgstr "الفوائد الرئيسية"
 
 #: templates/solutions/detail.html:25 templates/solutions/list.html:45
 msgid "How we work"
-msgstr ""
+msgstr "كيف نعمل"
 
 #: templates/solutions/detail.html:29 templates/solutions/list.html:49
 msgid "Use cases"
-msgstr ""
+msgstr "حالات الاستخدام"
 
 #: templates/solutions/detail.html:33 templates/solutions/list.html:53
 msgid "Mini case study"
-msgstr ""
+msgstr "دراسة حالة مصغّرة"
 
 #: templates/solutions/detail.html:39 templates/solutions/list.html:57
 msgid "Start with this solution"
@@ -1629,37 +1629,37 @@ msgstr "ابدأ بهذا الحل"
 
 #: templates/solutions/detail.html:40
 msgid "We'll generate a personalized marketing plan in 3 quick steps."
-msgstr ""
+msgstr "سننشئ خطة تسويق مخصصة في 3 خطوات سريعة."
 
 #: templates/solutions/detail.html:41
 msgid "Start now"
-msgstr ""
+msgstr "ابدأ الآن"
 
 #: templates/solutions/detail.html:42
 msgid "Free preview — premium features unlock after upgrade."
-msgstr ""
+msgstr "معاينة مجانية — تُفتح الميزات المتميزة بعد الترقية."
 
 #: templates/solutions/list.html:9
 msgid "Ready-to-launch marketing playbooks"
-msgstr ""
+msgstr "أدلة تسويقية جاهزة للإطلاق"
 
 #: templates/solutions/list.html:10
 msgid ""
 "Open any solution for the full breakdown and kick off your personalized plan "
 "in 3 steps."
-msgstr ""
+msgstr "افتح أي حل للاطلاع على التفاصيل الكاملة وابدأ خطتك المخصصة في 3 خطوات."
 
 #: templates/solutions/list.html:21
 msgid "Open details"
-msgstr ""
+msgstr "فتح التفاصيل"
 
 #: templates/solutions/list.html:32
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: templates/solutions/list.html:58
 msgid "Open full page"
-msgstr ""
+msgstr "فتح الصفحة الكاملة"
 
 #: templates/solutions/plan_detail.html:13
 msgid "Executive summary"
@@ -1671,15 +1671,15 @@ msgstr "عرض القيمة"
 
 #: templates/solutions/plan_detail.html:22
 msgid "Strengths"
-msgstr ""
+msgstr "نقاط القوة"
 
 #: templates/solutions/plan_detail.html:26
 msgid "Opportunities"
-msgstr ""
+msgstr "الفرص"
 
 #: templates/solutions/plan_detail.html:30
 msgid "Risks"
-msgstr ""
+msgstr "المخاطر"
 
 #: templates/solutions/plan_detail.html:39 templates/solutions/wizard.html:69
 msgid "Recommended channels"
@@ -1703,7 +1703,7 @@ msgstr "تقدير الميزانية"
 
 #: templates/solutions/plan_detail.html:65
 msgid "Optimization"
-msgstr ""
+msgstr "التحسين"
 
 #: templates/solutions/plan_detail.html:70
 msgid "Next steps"
@@ -1711,51 +1711,51 @@ msgstr "الخطوات التالية"
 
 #: templates/solutions/plan_detail.html:73
 msgid "Unlock premium features"
-msgstr ""
+msgstr "فتح الميزات المتميزة"
 
 #: templates/solutions/plan_detail.html:74
 msgid "Refine with AI chat"
-msgstr ""
+msgstr "حسِّن بمساعدة الدردشة الذكية"
 
 #: templates/solutions/wizard.html:3
 msgid "Configure strategy"
-msgstr ""
+msgstr "إعداد الاستراتيجية"
 
 #: templates/solutions/wizard.html:7
 msgid "Steps"
-msgstr ""
+msgstr "الخطوات"
 
 #: templates/solutions/wizard.html:17
 msgid "Step 1 — Company information"
-msgstr ""
+msgstr "الخطوة 1 — معلومات الشركة"
 
 #: templates/solutions/wizard.html:18
 msgid "Tell us about your company so we can tailor the plan."
-msgstr ""
+msgstr "أخبرنا عن شركتك حتى نتمكن من تخصيص الخطة."
 
 #: templates/solutions/wizard.html:25
 msgid "Company size"
-msgstr ""
+msgstr "حجم الشركة"
 
 #: templates/solutions/wizard.html:29
 msgid "Cancel"
-msgstr ""
+msgstr "إلغاء"
 
 #: templates/solutions/wizard.html:30
 msgid "Continue"
-msgstr ""
+msgstr "متابعة"
 
 #: templates/solutions/wizard.html:35
 msgid "Step 2 — Campaign details"
-msgstr ""
+msgstr "الخطوة 2 — تفاصيل الحملة"
 
 #: templates/solutions/wizard.html:36
 msgid "Define your goals, audience and budget."
-msgstr ""
+msgstr "حدِّد أهدافك وجمهورك وميزانيتك."
 
 #: templates/solutions/wizard.html:40
 msgid "Objective"
-msgstr ""
+msgstr "الهدف"
 
 #: templates/solutions/wizard.html:43
 msgid "Budget"
@@ -1771,24 +1771,24 @@ msgstr "رجوع"
 
 #: templates/solutions/wizard.html:49
 msgid "Generate plan"
-msgstr ""
+msgstr "إنشاء الخطة"
 
 #: templates/solutions/wizard.html:54
 msgid "Step 3 — Your personalized plan"
-msgstr ""
+msgstr "الخطوة 3 — خطتك المخصصة"
 
 #: templates/solutions/wizard.html:55
 msgid "Review the generated plan and save it to your dashboard."
-msgstr ""
+msgstr "راجع الخطة المُنشأة واحفظها في لوحة التحكم."
 
 #: templates/solutions/wizard.html:101
 msgid "Save plan to my dashboard"
-msgstr ""
+msgstr "حفظ الخطة في لوحة التحكم"
 
 #: templates/solutions/wizard.html:106
 msgid "Please complete the previous steps to generate your plan."
-msgstr ""
+msgstr "يرجى إكمال الخطوات السابقة لإنشاء خطتك."
 
 #: templates/solutions/wizard.html:107
 msgid "Start over"
-msgstr ""
+msgstr "البدء من جديد"
