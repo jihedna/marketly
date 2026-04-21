@@ -12,4 +12,3 @@ media/
 .idea/
 .vscode/
 *.log
-locale/*/LC_MESSAGES/*.mo
