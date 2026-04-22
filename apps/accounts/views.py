@@ -68,6 +68,13 @@ class LoginView(View):
             )
             return redirect("accounts:verify_email")
         login(request, user)
+        # Remember-me: when unchecked, expire the session when the browser
+        # closes; when checked, use the default 2-week persistent session.
+        remember_me = form.cleaned_data.get("remember_me", False)
+        if remember_me:
+            request.session.set_expiry(60 * 60 * 24 * 14)  # 14 days
+        else:
+            request.session.set_expiry(0)  # browser close
         messages.success(request, _("Welcome back, %(name)s!") % {"name": user.display_name})
         next_url = request.GET.get("next") or reverse("dashboard:home")
         return redirect(next_url)

@@ -27,6 +27,7 @@
     </button>
 
     <nav class="main-nav" aria-label="{% trans 'Main navigation' %}" data-main-nav>
+      <a href="{% url 'services:list' %}">{% trans "Services" %}</a>
       <a href="{% url 'solutions:list' %}">{% trans "Solutions" %}</a>
       <a href="{% url 'billing:pricing' %}">{% trans "Pricing" %}</a>
       <a href="{% url 'chatbot:home' %}">{% trans "AI chatbot" %}</a>
@@ -92,6 +93,7 @@
     </div>
     <div>
       <h4>{% trans "Product" %}</h4>
+      <a href="{% url 'services:list' %}">{% trans "Services" %}</a>
       <a href="{% url 'solutions:list' %}">{% trans "Solutions" %}</a>
       <a href="{% url 'billing:pricing' %}">{% trans "Pricing" %}</a>
       <a href="{% url 'chatbot:home' %}">{% trans "AI chatbot" %}</a>

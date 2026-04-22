@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,7 +11,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,7 +45,7 @@ msgstr "تأكيد كلمة المرور"
 
 #: apps/accounts/forms.py:25
 msgid "An account with this email already exists."
-msgstr ""
+msgstr "يوجد حساب بهذا البريد الإلكتروني بالفعل."
 
 #: apps/accounts/forms.py:33 apps/accounts/forms.py:93
 msgid "Passwords do not match."
@@ -66,15 +65,15 @@ msgstr "تأكيد كلمة المرور الجديدة"
 
 #: apps/accounts/models.py:46
 msgid "email address"
-msgstr ""
+msgstr "عنوان البريد الإلكتروني"
 
 #: apps/accounts/models.py:55
 msgid "user"
-msgstr ""
+msgstr "مستخدم"
 
 #: apps/accounts/models.py:56
 msgid "users"
-msgstr ""
+msgstr "المستخدمون"
 
 #: apps/accounts/models.py:68
 msgid "Light"
@@ -238,7 +237,7 @@ msgstr ""
 
 #: apps/core/views.py:27 templates/core/home.html:29
 msgid "Client retention"
-msgstr ""
+msgstr "معدل الاحتفاظ بالعملاء"
 
 #: apps/core/views.py:28
 msgid "Countries served"
@@ -276,7 +275,7 @@ msgstr ""
 
 #: apps/core/views.py:70
 msgid "Please fill in all required fields."
-msgstr ""
+msgstr "يرجى ملء جميع الحقول المطلوبة."
 
 #: apps/core/views.py:73
 #, python-format
@@ -285,7 +284,7 @@ msgstr ""
 
 #: apps/core/views.py:79
 msgid "Thanks! We'll get back to you shortly."
-msgstr ""
+msgstr "شكرًا! سنعود إليك قريبًا."
 
 #: apps/solutions/catalog.py:10
 msgid "Social media strategy"
@@ -796,7 +795,7 @@ msgstr "مرحباً بعودتك"
 
 #: templates/account/login.html:8
 msgid "Sign in to continue planning winning campaigns."
-msgstr ""
+msgstr "سجّل الدخول لمواصلة تخطيط حملات ناجحة."
 
 #: templates/account/login.html:13
 #: templates/account/password_reset_confirm.html:12
@@ -812,11 +811,11 @@ msgstr "نسيت كلمة المرور؟"
 
 #: templates/account/login.html:26
 msgid "New to Marketly?"
-msgstr ""
+msgstr "جديد على Marketly؟"
 
 #: templates/account/login.html:26
 msgid "Create an account"
-msgstr ""
+msgstr "إنشاء حساب"
 
 #: templates/account/password_reset_confirm.html:3
 #: templates/account/password_reset_confirm.html:31
@@ -998,23 +997,23 @@ msgstr ""
 
 #: templates/base.html:7 templates/core/home.html:3
 msgid "Marketing strategies that grow brands"
-msgstr ""
+msgstr "استراتيجيات تسويقية تُنمّي العلامات التجارية"
 
 #: templates/base.html:8
 msgid "Plan, launch and scale premium marketing strategies with Marketly."
-msgstr ""
+msgstr "خطّط وأطلق ووسّع استراتيجيات تسويقية متميزة مع Marketly."
 
 #: templates/base.html:16
 msgid "Skip to content"
-msgstr ""
+msgstr "الانتقال إلى المحتوى"
 
 #: templates/base.html:25
 msgid "Open menu"
-msgstr ""
+msgstr "فتح القائمة"
 
 #: templates/base.html:29
 msgid "Main navigation"
-msgstr ""
+msgstr "التنقل الرئيسي"
 
 #: templates/base.html:30 templates/base.html:95 templates/core/home.html:56
 #: templates/solutions/list.html:3 templates/solutions/list.html:8
@@ -1043,7 +1042,7 @@ msgstr "تواصل"
 
 #: templates/base.html:54
 msgid "Toggle dark mode"
-msgstr ""
+msgstr "تبديل الوضع الداكن"
 
 #: templates/base.html:60 templates/base.html:109
 #: templates/dashboard/home.html:3
@@ -1060,23 +1059,23 @@ msgstr "ابدأ الآن"
 
 #: templates/base.html:91
 msgid "Marketing strategies that grow brands across every channel."
-msgstr ""
+msgstr "استراتيجيات تسويقية تُنمّي العلامات التجارية عبر كل القنوات."
 
 #: templates/base.html:94
 msgid "Product"
-msgstr ""
+msgstr "المنتج"
 
 #: templates/base.html:103
 msgid "About"
-msgstr ""
+msgstr "من نحن"
 
 #: templates/base.html:104
 msgid "Careers"
-msgstr ""
+msgstr "الوظائف"
 
 #: templates/base.html:107
 msgid "Account"
-msgstr ""
+msgstr "الحساب"
 
 #: templates/base.html:110
 msgid "Profile"
@@ -1232,15 +1231,15 @@ msgstr ""
 
 #: templates/core/home.html:10
 msgid "AI-powered marketing planning"
-msgstr ""
+msgstr "تخطيط تسويقي مدعوم بالذكاء الاصطناعي"
 
 #: templates/core/home.html:11
 msgid "Marketing strategies that"
-msgstr ""
+msgstr "استراتيجيات تسويقية"
 
 #: templates/core/home.html:11
 msgid "grow brands."
-msgstr ""
+msgstr "تُنمّي العلامات التجارية."
 
 #: templates/core/home.html:12
 msgid ""
@@ -1250,45 +1249,45 @@ msgstr ""
 
 #: templates/core/home.html:14 templates/core/home.html:107
 msgid "Explore solutions"
-msgstr ""
+msgstr "اكتشف الحلول"
 
 #: templates/core/home.html:15
 msgid "See pricing"
-msgstr ""
+msgstr "عرض الأسعار"
 
 #: templates/core/home.html:19
 msgid "Trusted by growth teams worldwide"
-msgstr ""
+msgstr "يعتمد عليه فرق النمو حول العالم"
 
 #: templates/core/home.html:23
 msgid "Your strategy, ready in minutes"
-msgstr ""
+msgstr "استراتيجيتك جاهزة في دقائق"
 
 #: templates/core/home.html:24
 msgid ""
 "Tell us about your company and goals. We'll generate a full marketing plan "
 "tailored to your industry, budget, and audience."
-msgstr ""
+msgstr "أخبرنا عن شركتك وأهدافك، وسنولّد لك خطة تسويقية كاملة مخصصة لقطاعك وميزانيتك وجمهورك."
 
 #: templates/core/home.html:26
 msgid "ROAS uplift"
-msgstr ""
+msgstr "نمو العائد على الإنفاق"
 
 #: templates/core/home.html:27
 msgid "Faster planning"
-msgstr ""
+msgstr "تخطيط أسرع"
 
 #: templates/core/home.html:28
 msgid "Experiments/quarter"
-msgstr ""
+msgstr "تجربة/ربع"
 
 #: templates/core/home.html:38
 msgid "Why Marketly"
-msgstr ""
+msgstr "لماذا Marketly"
 
 #: templates/core/home.html:39
 msgid "Everything you need to plan world-class campaigns"
-msgstr ""
+msgstr "كل ما تحتاجه لتخطيط حملات عالمية المستوى"
 
 #: templates/core/home.html:40
 msgid ""
@@ -1298,7 +1297,7 @@ msgstr ""
 
 #: templates/core/home.html:43
 msgid "Goal-first planning"
-msgstr ""
+msgstr "تخطيط يبدأ بالأهداف"
 
 #: templates/core/home.html:43
 msgid ""
@@ -1308,25 +1307,25 @@ msgstr ""
 
 #: templates/core/home.html:44
 msgid "AI-assisted drafts"
-msgstr ""
+msgstr "مسودات بمساعدة الذكاء الاصطناعي"
 
 #: templates/core/home.html:44
 msgid ""
 "Briefs, channel plans, and copy ideas generated in seconds and easy to "
 "refine."
-msgstr ""
+msgstr "بريِفات وخطط قنوات وأفكار محتوى تُنتَج في ثوانٍ وسهلة التحسين."
 
 #: templates/core/home.html:45
 msgid "Benchmark-backed KPIs"
-msgstr ""
+msgstr "مؤشرات أداء مبنية على معايير السوق"
 
 #: templates/core/home.html:45
 msgid "Industry benchmarks and best-in-class KPI targets for every channel."
-msgstr ""
+msgstr "معايير القطاع وأهداف KPI من الطراز الأول لكل قناة."
 
 #: templates/core/home.html:46
 msgid "Multi-channel mix"
-msgstr ""
+msgstr "مزيج متعدد القنوات"
 
 #: templates/core/home.html:46
 msgid "Paid, organic, lifecycle, PR — plan them together instead of in silos."
@@ -1334,15 +1333,15 @@ msgstr ""
 
 #: templates/core/home.html:47
 msgid "Experiment cadence"
-msgstr ""
+msgstr "إيقاع التجارب"
 
 #: templates/core/home.html:47
 msgid "Bake in a steady test-and-learn rhythm to compound growth every month."
-msgstr ""
+msgstr "أدمِج إيقاعًا منتظمًا من الاختبار والتعلّم لنمو تراكمي كل شهر."
 
 #: templates/core/home.html:48
 msgid "Multilingual"
-msgstr ""
+msgstr "متعدد اللغات"
 
 #: templates/core/home.html:48
 msgid "Work in English, French or Arabic — with RTL layout support."
@@ -1350,19 +1349,19 @@ msgstr ""
 
 #: templates/core/home.html:57
 msgid "Six marketing solutions, ready to deploy"
-msgstr ""
+msgstr "ست حلول تسويقية جاهزة للتطبيق"
 
 #: templates/core/home.html:58
 msgid "Hand-crafted playbooks you can personalize and save in one click."
-msgstr ""
+msgstr "خطط مُعدّة يدويًا يمكنك تخصيصها وحفظها بنقرة واحدة."
 
 #: templates/core/home.html:86
 msgid "Testimonials"
-msgstr ""
+msgstr "الآراء"
 
 #: templates/core/home.html:87
 msgid "Loved by growth teams"
-msgstr ""
+msgstr "فرق النمو يُحبّونه"
 
 #: templates/core/home.html:103
 msgid "Ready to plan your next winning campaign?"
@@ -1605,23 +1604,23 @@ msgstr ""
 
 #: templates/solutions/detail.html:17 templates/solutions/list.html:37
 msgid "Overview"
-msgstr ""
+msgstr "نظرة عامة"
 
 #: templates/solutions/detail.html:21 templates/solutions/list.html:41
 msgid "Key benefits"
-msgstr ""
+msgstr "أبرز الفوائد"
 
 #: templates/solutions/detail.html:25 templates/solutions/list.html:45
 msgid "How we work"
-msgstr ""
+msgstr "كيف نعمل"
 
 #: templates/solutions/detail.html:29 templates/solutions/list.html:49
 msgid "Use cases"
-msgstr ""
+msgstr "حالات الاستخدام"
 
 #: templates/solutions/detail.html:33 templates/solutions/list.html:53
 msgid "Mini case study"
-msgstr ""
+msgstr "دراسة حالة مختصرة"
 
 #: templates/solutions/detail.html:39 templates/solutions/list.html:57
 msgid "Start with this solution"
@@ -1641,25 +1640,25 @@ msgstr ""
 
 #: templates/solutions/list.html:9
 msgid "Ready-to-launch marketing playbooks"
-msgstr ""
+msgstr "خطط تسويقية جاهزة للإطلاق"
 
 #: templates/solutions/list.html:10
 msgid ""
 "Open any solution for the full breakdown and kick off your personalized plan "
 "in 3 steps."
-msgstr ""
+msgstr "افتح أي حل لرؤية التفاصيل الكاملة وابدأ خطتك المخصصة في 3 خطوات."
 
 #: templates/solutions/list.html:21
 msgid "Open details"
-msgstr ""
+msgstr "عرض التفاصيل"
 
 #: templates/solutions/list.html:32
 msgid "Close"
-msgstr ""
+msgstr "إغلاق"
 
 #: templates/solutions/list.html:58
 msgid "Open full page"
-msgstr ""
+msgstr "فتح الصفحة الكاملة"
 
 #: templates/solutions/plan_detail.html:13
 msgid "Executive summary"

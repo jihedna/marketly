@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # Local apps
     "apps.accounts",
     "apps.core",
+    "apps.services",
     "apps.solutions",
     "apps.chatbot",
     "apps.recommendations",

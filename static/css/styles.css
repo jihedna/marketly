@@ -295,6 +295,55 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } }
 .auth-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; color: var(--text-muted); font-size: 14px; }
+.auth-meta-row { flex-wrap: wrap; gap: 12px; }
+.auth-meta .checkbox { display: inline-flex; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
+.auth-meta .checkbox input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--brand-violet); margin: 0; }
+.auth-meta a { color: var(--brand-violet); font-weight: 600; text-decoration: none; }
+.auth-meta a:hover { text-decoration: underline; }
+
+/* Services grid */
+.section-hero-slim { padding-top: 48px; }
+.services-grid {
+  display: grid; gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-top: 32px;
+}
+.service-card {
+  background: var(--bg-elev); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 28px; display: flex; flex-direction: column; gap: 12px;
+  box-shadow: var(--card-shadow); position: relative; overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.service-card:hover { transform: translateY(-2px); border-color: color-mix(in oklab, var(--brand-violet) 40%, var(--border)); }
+.service-card::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 4px;
+  background: var(--gradient-brand); opacity: .9;
+}
+.service-card.accent-orange::before { background: linear-gradient(90deg, #ffb347, #ff7a2d); }
+.service-card.accent-pink::before   { background: linear-gradient(90deg, #ff7a2d, #ff3d8b); }
+.service-card.accent-violet::before { background: linear-gradient(90deg, #ff3d8b, #7a3cff); }
+.service-card.accent-teal::before   { background: linear-gradient(90deg, #22c6a0, #7a3cff); }
+.service-card.accent-green::before  { background: linear-gradient(90deg, #10b981, #22c6a0); }
+.service-card .icon {
+  width: 52px; height: 52px; border-radius: 14px;
+  background: var(--gradient-brand-soft); color: var(--text);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 24px;
+}
+.service-card h3 { margin: 4px 0 0; font-size: 20px; font-weight: 700; }
+.service-card .tagline { color: var(--text-muted); font-weight: 500; margin: 0; }
+.service-card .description { color: var(--text-muted); font-size: 14px; margin: 0; }
+.service-card .card-footer {
+  margin-top: auto; display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; padding-top: 14px;
+}
+.service-card .chip-plan {
+  background: var(--gradient-brand-soft); color: var(--text); font-weight: 600;
+  font-size: 12px; border-radius: 999px; padding: 4px 10px;
+}
+.section-cta { margin-top: 48px; }
+.empty-state { grid-column: 1 / -1; padding: 32px; text-align: center; color: var(--text-muted); border: 1px dashed var(--border); border-radius: var(--radius); }
+
 .divider { display: flex; align-items: center; gap: 10px; color: var(--text-muted); font-size: 13px; margin: 18px 0; }
 .divider::before, .divider::after { content: ""; flex: 1; height: 1px; background: var(--border); }
 .social-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
