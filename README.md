@@ -48,6 +48,12 @@ so verification and reset codes are **printed to the terminal** where runserver
 is running. Switch to SMTP by setting `EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend`
 and filling in `EMAIL_HOST`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD`, etc.
 
+To send **real** email via your personal Gmail account, follow the step-by-step
+instructions in [GMAIL_SETUP.md](GMAIL_SETUP.md). The short version: enable
+2-Step Verification, generate an App Password at
+https://myaccount.google.com/apppasswords, and paste it into `.env` as
+`EMAIL_HOST_PASSWORD`.
+
 ### Stripe
 
 Set `STRIPE_PUBLIC_KEY`, `STRIPE_SECRET_KEY`, and (optionally) `STRIPE_WEBHOOK_SECRET`
