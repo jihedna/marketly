@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Services" %} — {{ BRAND_NAME }}{% endblock %}
+{% block body_class %}services{% endblock %}
+
+{% block content %}
+<section class="section section-hero-slim">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{% trans "Services" %}</span>
+      <h1>{% trans "Everything you need to plan winning campaigns" %}</h1>
+      <p>{% trans "A modular suite of marketing services — plug in what you need, from data analysis to AI-driven planning." %}</p>
+    </div>
+
+    <div class="services-grid">
+      {% for s in services %}
+        <article class="service-card accent-{{ s.accent_color|default:'violet' }}">
+          <div class="icon" aria-hidden="true">{{ s.icon }}</div>
+          <h3>{{ s.title }}</h3>
+          <p class="tagline">{{ s.tagline }}</p>
+          {% if s.description %}<p class="description">{{ s.description }}</p>{% endif %}
+          <div class="card-footer">
+            {% if s.related_plan %}
+              <span class="chip chip-plan">{{ s.related_plan.name }}</span>
+            {% endif %}
+            <a class="btn-outline" href="{{ s.cta_url|default:'' }}{% if not s.cta_url %}{% url 'billing:pricing' %}{% endif %}">
+              {{ s.cta_label|default:_("Learn more") }} →
+            </a>
+          </div>
+        </article>
+      {% empty %}
+        <div class="empty-state">
+          <p>{% trans "No services have been configured yet. Add them from the Django admin." %}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="section-cta mt-4">
+      <div class="hero-card" style="text-align:center;">
+        <h3>{% trans "Ready to build your plan?" %}</h3>
+        <p class="text-muted">{% trans "Pick a solution and our guided wizard will generate your full marketing strategy in minutes." %}</p>
+        <div class="hero-ctas" style="justify-content:center;">
+          <a href="{% url 'solutions:list' %}" class="btn-cta">{% trans "Explore solutions" %}</a>
+          <a href="{% url 'billing:pricing' %}" class="btn-outline">{% trans "See pricing" %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

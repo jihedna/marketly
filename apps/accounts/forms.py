@@ -53,6 +53,11 @@ class SignupForm(forms.Form):
 class LoginForm(forms.Form):
     email = forms.EmailField()
     password = forms.CharField(widget=forms.PasswordInput)
+    remember_me = forms.BooleanField(
+        required=False,
+        initial=True,
+        label=_("Remember me"),
+    )
 
     def __init__(self, *args, request=None, **kwargs):
         self.request = request

@@ -22,6 +22,7 @@ urlpatterns = [
 urlpatterns += i18n_patterns(
     path("", include(("apps.core.urls", "core"), namespace="core")),
     path("accounts/", include(("apps.accounts.urls", "accounts"), namespace="accounts")),
+    path("services/", include(("apps.services.urls", "services"), namespace="services")),
     path("solutions/", include(("apps.solutions.urls", "solutions"), namespace="solutions")),
     path("chatbot/", include(("apps.chatbot.urls", "chatbot"), namespace="chatbot")),
     path(
